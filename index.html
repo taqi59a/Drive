@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driving Theory Exam</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+      max-width: 700px;
+      width: 100%;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a3c6e;
+      margin-bottom: 8px;
+      font-size: 1.8rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 32px;
+      font-size: 0.95rem;
+    }
+
+    /* Start screen */
+    #start-screen { text-align: center; }
+    #start-screen p { margin-bottom: 24px; color: #555; line-height: 1.6; }
+
+    /* Progress */
+    .progress-bar-wrap {
+      background: #e0e8f0;
+      border-radius: 50px;
+      height: 10px;
+      margin-bottom: 24px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      background: #1a3c6e;
+      height: 100%;
+      border-radius: 50px;
+      transition: width 0.3s ease;
+    }
+    .progress-label {
+      font-size: 0.85rem;
+      color: #888;
+      text-align: right;
+      margin-top: 4px;
+      margin-bottom: 20px;
+    }
+
+    /* Question */
+    .question-text {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    /* Options */
+    .options { list-style: none; }
+    .options li { margin-bottom: 12px; }
+    .options label {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 18px;
+      border: 2px solid #d0dbe8;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      font-size: 0.97rem;
+      line-height: 1.4;
+    }
+    .options label:hover { border-color: #1a3c6e; background: #f0f4f8; }
+    .options input[type="radio"] { margin-top: 3px; accent-color: #1a3c6e; flex-shrink: 0; }
+
+    /* Feedback */
+    .feedback {
+      margin-top: 20px;
+      padding: 14px 18px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      display: none;
+    }
+    .feedback.correct { background: #e6f4ea; border-left: 4px solid #2e7d32; color: #1b5e20; }
+    .feedback.incorrect { background: #fdecea; border-left: 4px solid #c62828; color: #7f0000; }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-primary { background: #1a3c6e; color: #fff; }
+    .btn-primary:hover { background: #14305a; }
+    .btn-primary:disabled { background: #9bb0c8; cursor: not-allowed; }
+
+    .btn-row {
+      margin-top: 28px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+
+    /* Results screen */
+    #results-screen { text-align: center; }
+    .score-circle {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      margin: 0 auto 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .score-circle.pass { background: #e6f4ea; border: 6px solid #2e7d32; color: #1b5e20; }
+    .score-circle.fail { background: #fdecea; border: 6px solid #c62828; color: #7f0000; }
+    .score-number { font-size: 2.2rem; }
+    .score-label { font-size: 0.8rem; margin-top: 2px; }
+
+    .result-message { font-size: 1.2rem; font-weight: bold; margin-bottom: 12px; }
+    .result-detail { color: #555; margin-bottom: 28px; line-height: 1.6; }
+
+    /* Review */
+    .review-item {
+      text-align: left;
+      border: 2px solid #d0dbe8;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+    .review-item.correct { border-left-color: #2e7d32; }
+    .review-item.incorrect { border-left-color: #c62828; }
+    .review-q { font-weight: bold; margin-bottom: 8px; font-size: 0.95rem; }
+    .review-a { font-size: 0.9rem; color: #555; }
+    .review-a span { font-weight: bold; }
+    .review-a .your-answer { color: #c62828; }
+    .review-a .correct-answer { color: #2e7d32; }
+
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>🚗 Driving Theory Exam</h1>
+  <p class="subtitle">UK Highway Code practice test</p>
+
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <p>This practice test contains <strong>20 questions</strong> covering road signs, rules of the road, and safe driving practices.<br><br>
+    You need to answer at least <strong>43 out of 50</strong> questions correctly to pass the real theory test. Aim for at least <strong>17 out of 20</strong> here.<br><br>
+    Select one answer per question. Good luck!</p>
+    <button class="btn btn-primary" id="start-btn">Start Exam</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div id="quiz-screen" class="hidden">
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <p class="progress-label" id="progress-label"></p>
+
+    <p class="question-text" id="question-text"></p>
+
+    <ul class="options" id="options-list"></ul>
+
+    <div class="feedback" id="feedback"></div>
+
+    <div class="btn-row">
+      <button class="btn btn-primary" id="submit-btn" disabled>Submit Answer</button>
+      <button class="btn btn-primary hidden" id="next-btn">Next Question</button>
+    </div>
+  </div>
+
+  <!-- Results Screen -->
+  <div id="results-screen" class="hidden">
+    <div class="score-circle" id="score-circle">
+      <div class="score-number" id="score-number"></div>
+      <div class="score-label">out of 20</div>
+    </div>
+    <p class="result-message" id="result-message"></p>
+    <p class="result-detail" id="result-detail"></p>
+
+    <button class="btn btn-primary" id="review-btn">Review Answers</button>
+    <button class="btn btn-primary" id="restart-btn" style="margin-left:12px">Try Again</button>
+
+    <div id="review-section" class="hidden" style="margin-top:32px;text-align:left"></div>
+  </div>
+</div>
+
+<script>
+const questions = [
+  {
+    q: "What does a red circle road sign indicate?",
+    options: ["A warning", "A prohibition or restriction", "Information", "A mandatory instruction"],
+    answer: 1,
+    explanation: "Red circle signs indicate prohibitions or restrictions, such as speed limits or no-entry signs."
+  },
+  {
+    q: "What is the national speed limit on a dual carriageway for a car?",
+    options: ["60 mph", "70 mph", "80 mph", "50 mph"],
+    answer: 1,
+    explanation: "The national speed limit on a dual carriageway is 70 mph for cars and motorcycles."
+  },
+  {
+    q: "You must not use a hand-held mobile phone while driving. When can you use it?",
+    options: ["When travelling at under 30 mph", "When stopped at traffic lights", "When parked safely with the engine off", "Never — there are no exceptions"],
+    answer: 2,
+    explanation: "You may use a hand-held phone only when you are safely parked with the engine switched off."
+  },
+  {
+    q: "What is the stopping distance at 70 mph in good conditions?",
+    options: ["53 metres", "75 metres", "96 metres", "120 metres"],
+    answer: 2,
+    explanation: "At 70 mph the overall stopping distance is 96 metres (about 315 feet), comprising 21 m thinking distance and 75 m braking distance."
+  },
+  {
+    q: "What shape are warning signs on UK roads?",
+    options: ["Circular", "Rectangular", "Triangular", "Octagonal"],
+    answer: 2,
+    explanation: "Warning signs in the UK are triangular with a red border."
+  },
+  {
+    q: "You are approaching a zebra crossing where a pedestrian is waiting. What should you do?",
+    options: ["Sound your horn and continue", "Flash your lights to let them cross", "Slow down and give way to the pedestrian", "Accelerate past before they step out"],
+    answer: 2,
+    explanation: "You must give way to pedestrians who are on or waiting to cross a zebra crossing."
+  },
+  {
+    q: "What does a continuous white line in the centre of the road mean?",
+    options: ["Overtaking is only permitted in daylight", "You must not cross or straddle it unless entering a premises", "You should keep to the left of it at all times", "The lane is for buses only"],
+    answer: 1,
+    explanation: "A continuous (solid) white centre line means you must not cross or straddle it except to enter premises or to pass a stationary vehicle."
+  },
+  {
+    q: "At what blood alcohol concentration (BAC) is it illegal to drive in England, Wales and Scotland?",
+    options: ["50 mg per 100 ml of blood", "80 mg per 100 ml of blood", "35 mg per 100 ml of breath", "Both 80 mg/100 ml blood and 35 mg/100 ml breath"],
+    answer: 3,
+    explanation: "The drink-drive limit in England, Wales and Scotland is 80 mg of alcohol per 100 ml of blood, or 35 micrograms per 100 ml of breath — both limits apply."
+  },
+  {
+    q: "When MUST you use your headlights?",
+    options: ["After 8 pm", "Whenever it rains", "Between sunset and sunrise and in seriously reduced visibility", "Only in fog"],
+    answer: 2,
+    explanation: "You must use headlights between sunset and sunrise. You should also use them (or front fog lights) when visibility is seriously reduced."
+  },
+  {
+    q: "What is the minimum tread depth for car tyres?",
+    options: ["1 mm", "1.6 mm", "2 mm", "3 mm"],
+    answer: 1,
+    explanation: "Car tyres must have a minimum tread depth of 1.6 mm across the central three-quarters of the tyre around its entire circumference."
+  },
+  {
+    q: "What does a flashing amber beacon on a vehicle indicate?",
+    options: ["The vehicle is a police car", "The vehicle is slow-moving or stationary and a hazard", "The vehicle is an ambulance", "The vehicle is reversing"],
+    answer: 1,
+    explanation: "A flashing amber beacon warns that the vehicle is slow-moving or stationary and presents a potential hazard."
+  },
+  {
+    q: "You want to turn right at a roundabout. Which lane should you generally use on approach?",
+    options: ["The left lane", "Either lane", "The right lane", "The middle lane"],
+    answer: 2,
+    explanation: "When turning right at a roundabout you should approach in the right-hand lane, keep to the right on the roundabout, and signal left just after the exit before yours."
+  },
+  {
+    q: "What is the speed limit in a built-up area unless otherwise signed?",
+    options: ["20 mph", "30 mph", "40 mph", "50 mph"],
+    answer: 1,
+    explanation: "The default speed limit in a built-up area (where there are street lights) is 30 mph unless signs indicate otherwise."
+  },
+  {
+    q: "When should you use hazard warning lights?",
+    options: ["When parking on double yellow lines", "To warn other drivers of a hazard ahead or when your vehicle is broken down", "When dropping off passengers quickly", "All of the above"],
+    answer: 1,
+    explanation: "Hazard lights should be used to warn other drivers when your vehicle is broken down or causing an obstruction, or briefly on a motorway to warn of a hazard ahead."
+  },
+  {
+    q: "What does a blue circle sign with a white arrow pointing upward mean?",
+    options: ["No entry", "Ahead only — you must go straight ahead", "One-way street", "Motorway ahead"],
+    answer: 1,
+    explanation: "A blue circle sign with a white arrow pointing upward is a mandatory instruction meaning you must go straight ahead."
+  },
+  {
+    q: "When is it legal to overtake on the left?",
+    options: ["When the vehicle in front is signalling right to turn and you can safely pass on the left", "When the road is clear ahead", "At any time on a dual carriageway", "Never — it is always illegal"],
+    answer: 0,
+    explanation: "You may pass on the left when the vehicle in front has signalled and is turning right, or in slow-moving queues where the left lane is moving faster."
+  },
+  {
+    q: "What should the distance be between your vehicle and the one in front on a motorway in good conditions?",
+    options: ["At least one car length per 10 mph", "At least a 2-second gap", "At least a 50-metre gap regardless of speed", "At least a 4-second gap"],
+    answer: 1,
+    explanation: "The Highway Code recommends leaving a gap of at least 2 seconds from the vehicle in front in good conditions. In wet conditions double this to 4 seconds."
+  },
+  {
+    q: "You are driving on a motorway and see a red X sign above your lane. What does this mean?",
+    options: ["Reduce speed to 50 mph", "Lane closed ahead — move to another lane", "The lane is for emergency vehicles only", "Overhead cameras are active"],
+    answer: 1,
+    explanation: "A red X sign above a motorway lane means that lane is closed. You must not drive in it."
+  },
+  {
+    q: "What is the maximum fine for driving without insurance?",
+    options: ["£500", "£1,000", "£5,000", "Unlimited"],
+    answer: 3,
+    explanation: "Driving without insurance can result in an unlimited fine, disqualification, or penalty points."
+  },
+  {
+    q: "What does the Highway Code say about using the horn?",
+    options: ["You may use it to greet other road users", "Use it only to warn others of your presence; do not use it while stationary unless a moving vehicle poses a danger", "You may use it when reversing", "You should use it instead of braking in an emergency"],
+    answer: 1,
+    explanation: "The Highway Code states you should only use your horn to warn others of your presence. You must not use it between 11:30 pm and 7:00 am in a built-up area, or when stationary (unless a moving vehicle poses a danger)."
+  }
+];
+
+let currentIndex = 0;
+let score = 0;
+let userAnswers = [];
+let answered = false;
+
+const startScreen = document.getElementById('start-screen');
+const quizScreen = document.getElementById('quiz-screen');
+const resultsScreen = document.getElementById('results-screen');
+const progressBar = document.getElementById('progress-bar');
+const progressLabel = document.getElementById('progress-label');
+const questionText = document.getElementById('question-text');
+const optionsList = document.getElementById('options-list');
+const feedback = document.getElementById('feedback');
+const submitBtn = document.getElementById('submit-btn');
+const nextBtn = document.getElementById('next-btn');
+
+document.getElementById('start-btn').addEventListener('click', startExam);
+submitBtn.addEventListener('click', submitAnswer);
+nextBtn.addEventListener('click', nextQuestion);
+document.getElementById('review-btn').addEventListener('click', showReview);
+document.getElementById('restart-btn').addEventListener('click', restart);
+
+function startExam() {
+  currentIndex = 0;
+  score = 0;
+  userAnswers = [];
+  startScreen.classList.add('hidden');
+  quizScreen.classList.remove('hidden');
+  showQuestion();
+}
+
+function showQuestion() {
+  answered = false;
+  feedback.style.display = 'none';
+  submitBtn.disabled = true;
+  submitBtn.classList.remove('hidden');
+  nextBtn.classList.add('hidden');
+
+  const q = questions[currentIndex];
+  const pct = (currentIndex / questions.length) * 100;
+  progressBar.style.width = pct + '%';
+  progressLabel.textContent = `Question ${currentIndex + 1} of ${questions.length}`;
+
+  questionText.textContent = q.q;
+  optionsList.innerHTML = '';
+
+  q.options.forEach((opt, i) => {
+    const li = document.createElement('li');
+    const label = document.createElement('label');
+    const radio = document.createElement('input');
+    radio.type = 'radio';
+    radio.name = 'option';
+    radio.value = i;
+    radio.addEventListener('change', () => { submitBtn.disabled = false; });
+    label.appendChild(radio);
+    label.appendChild(document.createTextNode(opt));
+    li.appendChild(label);
+    optionsList.appendChild(li);
+  });
+}
+
+function submitAnswer() {
+  if (answered) return;
+  const selected = document.querySelector('input[name="option"]:checked');
+  if (!selected) return;
+
+  answered = true;
+  const chosen = parseInt(selected.value);
+  const q = questions[currentIndex];
+  const correct = chosen === q.answer;
+
+  userAnswers.push({ chosen, correct });
+  if (correct) score++;
+
+  // Disable all options
+  document.querySelectorAll('input[name="option"]').forEach(r => r.disabled = true);
+
+  // Show feedback
+  feedback.className = 'feedback ' + (correct ? 'correct' : 'incorrect');
+  feedback.style.display = 'block';
+  feedback.textContent = (correct ? '✅ Correct! ' : '❌ Incorrect. ') + q.explanation;
+
+  submitBtn.classList.add('hidden');
+  nextBtn.classList.remove('hidden');
+  nextBtn.textContent = currentIndex + 1 < questions.length ? 'Next Question' : 'See Results';
+}
+
+function nextQuestion() {
+  currentIndex++;
+  if (currentIndex < questions.length) {
+    showQuestion();
+  } else {
+    showResults();
+  }
+}
+
+function showResults() {
+  quizScreen.classList.add('hidden');
+  resultsScreen.classList.remove('hidden');
+
+  const pass = score >= 17;
+  const circle = document.getElementById('score-circle');
+  circle.className = 'score-circle ' + (pass ? 'pass' : 'fail');
+  document.getElementById('score-number').textContent = score;
+  document.getElementById('result-message').textContent = pass ? '🎉 Pass!' : '❌ Not quite';
+  document.getElementById('result-detail').textContent = pass
+    ? `You answered ${score} out of ${questions.length} correctly. Well done!`
+    : `You answered ${score} out of ${questions.length} correctly. You need at least 17 to pass. Review the answers below and try again.`;
+
+  progressBar.style.width = '100%';
+  document.getElementById('review-section').classList.add('hidden');
+}
+
+function showReview() {
+  const section = document.getElementById('review-section');
+  section.classList.remove('hidden');
+  section.innerHTML = '';
+
+  questions.forEach((q, i) => {
+    const ua = userAnswers[i];
+    const div = document.createElement('div');
+    div.className = 'review-item ' + (ua.correct ? 'correct' : 'incorrect');
+
+    const qp = document.createElement('p');
+    qp.className = 'review-q';
+    qp.textContent = `${i + 1}. ${q.q}`;
+    div.appendChild(qp);
+
+    const ap = document.createElement('p');
+    ap.className = 'review-a';
+    if (ua.correct) {
+      ap.innerHTML = `Your answer: <span class="correct-answer">${q.options[ua.chosen]}</span> ✅`;
+    } else {
+      ap.innerHTML = `Your answer: <span class="your-answer">${q.options[ua.chosen]}</span> ❌ &nbsp;|&nbsp; Correct: <span class="correct-answer">${q.options[q.answer]}</span>`;
+    }
+    div.appendChild(ap);
+
+    section.appendChild(div);
+  });
+
+  section.scrollIntoView({ behavior: 'smooth' });
+}
+
+function restart() {
+  resultsScreen.classList.add('hidden');
+  startScreen.classList.remove('hidden');
+  progressBar.style.width = '0%';
+}
+</script>
+</body>
+</html>
