@@ -1,0 +1,29 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="300" height="200" fill="#E8F5E9"/>
+  <!-- Ground -->
+  <rect x="0" y="165" width="300" height="35" fill="#8D6E63"/>
+  <!-- SOS post -->
+  <rect x="130" y="40" width="40" height="125" rx="5" fill="#FF6F00" stroke="#E65100" stroke-width="2"/>
+  <!-- Post top cap -->
+  <rect x="125" y="35" width="50" height="12" rx="4" fill="#FF6F00" stroke="#E65100" stroke-width="2"/>
+  <!-- Phone symbol on post -->
+  <g transform="translate(150,100)">
+    <ellipse cx="-6" cy="-10" rx="6" ry="5" fill="white"/>
+    <ellipse cx="6" cy="10" rx="6" ry="5" fill="white"/>
+    <line x1="-6" y1="-5" x2="6" y2="5" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <!-- SOS text -->
+  <text x="150" y="148" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">SOS</text>
+  <!-- Orange distance marker stripes -->
+  <rect x="127" y="55" width="46" height="6" fill="#FFF9C4"/>
+  <rect x="127" y="75" width="46" height="6" fill="#FFF9C4"/>
+  <!-- Arrow pointing to post -->
+  <path d="M90 100 L122 100" stroke="#E53935" stroke-width="3" fill="none" marker-end="url(#ra)"/>
+  <text x="55" y="97" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">500m</text>
+  <defs>
+    <marker id="ra" markerWidth="8" markerHeight="8" refX="5" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 Z" fill="#E53935"/>
+    </marker>
+  </defs>
+</svg>

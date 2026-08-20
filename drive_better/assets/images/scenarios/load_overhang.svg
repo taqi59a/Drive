@@ -1,0 +1,31 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Road -->
+  <rect x="0" y="80" width="300" height="120" fill="#555"/>
+  <line x1="0" y1="140" x2="300" y2="140" stroke="white" stroke-width="3" stroke-dasharray="20,15"/>
+  <!-- Top-down vehicle body -->
+  <rect x="80" y="95" width="110" height="70" rx="10" fill="#3a7bd5"/>
+  <!-- Windshields -->
+  <rect x="88" y="100" width="40" height="20" rx="4" fill="#a8d8f0"/>
+  <rect x="88" y="140" width="40" height="18" rx="4" fill="#a8d8f0"/>
+  <!-- Wheels -->
+  <rect x="75" y="98" width="14" height="18" rx="3" fill="#222"/>
+  <rect x="75" y="144" width="14" height="18" rx="3" fill="#222"/>
+  <rect x="161" y="98" width="14" height="18" rx="3" fill="#222"/>
+  <rect x="161" y="144" width="14" height="18" rx="3" fill="#222"/>
+  <!-- Cargo on roof/bed extending past rear -->
+  <rect x="110" y="100" width="100" height="60" rx="4" fill="#8B4513" opacity="0.9"/>
+  <line x1="110" y1="110" x2="210" y2="110" stroke="#5a2d00" stroke-width="1.5"/>
+  <line x1="110" y1="120" x2="210" y2="120" stroke="#5a2d00" stroke-width="1.5"/>
+  <line x1="110" y1="130" x2="210" y2="130" stroke="#5a2d00" stroke-width="1.5"/>
+  <line x1="110" y1="140" x2="210" y2="140" stroke="#5a2d00" stroke-width="1.5"/>
+  <!-- Overhang beyond vehicle rear -->
+  <rect x="190" y="108" width="60" height="44" rx="3" fill="#a0522d" opacity="0.95" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,3"/>
+  <!-- Red warning flag at tip of overhang -->
+  <line x1="250" y1="108" x2="250" y2="90" stroke="#e74c3c" stroke-width="2"/>
+  <polygon points="250,90 265,95 250,100" fill="#e74c3c"/>
+  <!-- Rope/strap indicators -->
+  <line x1="130" y1="100" x2="130" y2="95" stroke="#f39c12" stroke-width="2"/>
+  <line x1="160" y1="100" x2="160" y2="95" stroke="#f39c12" stroke-width="2"/>
+  <!-- Label -->
+  <text x="150" y="185" text-anchor="middle" font-family="Arial" font-size="11" fill="white" font-weight="bold">LOAD OVERHANG</text>
+</svg>

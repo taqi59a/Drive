@@ -1,0 +1,49 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#4a7c59"/>
+  <!-- Motorway -->
+  <rect x="0" y="60" width="300" height="100" fill="#777"/>
+  <line x1="0" y1="110" x2="300" y2="110" stroke="white" stroke-width="2" stroke-dasharray="20,10"/>
+  <!-- Hard shoulder -->
+  <rect x="0" y="140" width="300" height="20" fill="#888" stroke="#FFD700" stroke-width="2" stroke-dasharray="0"/>
+  <line x1="0" y1="140" x2="300" y2="140" stroke="#FFD700" stroke-width="2.5"/>
+  <!-- Broken down car on hard shoulder -->
+  <g transform="translate(60,143)">
+    <rect x="0" y="-18" width="70" height="28" rx="4" fill="#cc3322"/>
+    <rect x="8" y="-26" width="46" height="16" rx="3" fill="#ee4433"/>
+    <circle cx="12" cy="12" r="7" fill="#222"/>
+    <circle cx="56" cy="12" r="7" fill="#222"/>
+    <!-- Hazard lights -->
+    <rect x="-4" y="-8" width="6" height="5" fill="#FFD700"/>
+    <rect x="68" y="-8" width="6" height="5" fill="#FFD700"/>
+  </g>
+  <!-- Warning triangle -->
+  <g transform="translate(30,120)">
+    <polygon points="0,-18 16,10 -16,10" fill="#FFD700" stroke="#cc8800" stroke-width="2"/>
+    <polygon points="0,-10 8,6 -8,6" fill="#cc8800"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="9" fill="#FFD700" font-weight="bold">!</text>
+  </g>
+  <!-- Traffic cones -->
+  <g transform="translate(155,138)">
+    <polygon points="0,-18 7,0 -7,0" fill="#FF6600"/>
+    <rect x="-9" y="0" width="18" height="4" rx="1" fill="#ff8833"/>
+    <rect x="-5" y="-12" width="10" height="3" fill="white" opacity="0.7"/>
+  </g>
+  <g transform="translate(175,138)">
+    <polygon points="0,-18 7,0 -7,0" fill="#FF6600"/>
+    <rect x="-9" y="0" width="18" height="4" rx="1" fill="#ff8833"/>
+    <rect x="-5" y="-12" width="10" height="3" fill="white" opacity="0.7"/>
+  </g>
+  <g transform="translate(195,138)">
+    <polygon points="0,-18 7,0 -7,0" fill="#FF6600"/>
+    <rect x="-9" y="0" width="18" height="4" rx="1" fill="#ff8833"/>
+    <rect x="-5" y="-12" width="10" height="3" fill="white" opacity="0.7"/>
+  </g>
+  <!-- Moving cars in main lane -->
+  <g transform="translate(200,68)">
+    <rect x="0" y="0" width="55" height="24" rx="3" fill="#2255aa"/>
+    <rect x="7" y="-7" width="34" height="13" rx="2" fill="#3377cc"/>
+    <circle cx="9" cy="26" r="5" fill="#222"/>
+    <circle cx="44" cy="26" r="5" fill="#222"/>
+  </g>
+  <text x="150" y="194" text-anchor="middle" font-family="Arial" font-size="11" fill="white">Panne sur autoroute</text>
+</svg>

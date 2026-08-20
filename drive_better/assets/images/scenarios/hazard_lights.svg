@@ -1,0 +1,27 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Road -->
+  <rect x="0" y="0" width="300" height="200" fill="#bbb"/>
+  <rect x="50" y="0" width="200" height="200" fill="#555"/>
+  <!-- Car top-down centred -->
+  <g transform="translate(112,68)">
+    <rect x="0" y="0" width="76" height="64" rx="10" fill="#2196F3" stroke="#1565C0" stroke-width="2.5"/>
+    <rect x="8" y="8" width="60" height="20" rx="4" fill="#B3E5FC"/>
+    <rect x="8" y="38" width="60" height="18" rx="4" fill="#B3E5FC"/>
+  </g>
+  <!-- Blink arrows: top-left -->
+  <polygon points="85,52 68,65 85,78" fill="#FF6F00" opacity="0.9"/>
+  <rect x="85" y="59" width="14" height="12" fill="#FF6F00" opacity="0.9"/>
+  <!-- Blink arrows: top-right -->
+  <polygon points="215,52 232,65 215,78" fill="#FF6F00" opacity="0.9"/>
+  <rect x="201" y="59" width="14" height="12" fill="#FF6F00" opacity="0.9"/>
+  <!-- Blink arrows: bottom-left -->
+  <polygon points="85,122 68,135 85,148" fill="#FF6F00" opacity="0.9"/>
+  <rect x="85" y="129" width="14" height="12" fill="#FF6F00" opacity="0.9"/>
+  <!-- Blink arrows: bottom-right -->
+  <polygon points="215,122 232,135 215,148" fill="#FF6F00" opacity="0.9"/>
+  <rect x="201" y="129" width="14" height="12" fill="#FF6F00" opacity="0.9"/>
+  <!-- Hazard triangle symbol on car -->
+  <polygon points="150,82 139,102 161,102" fill="none" stroke="#FF6F00" stroke-width="2.5"/>
+  <line x1="150" y1="88" x2="150" y2="96" stroke="#FF6F00" stroke-width="2"/>
+  <circle cx="150" cy="99" r="1.5" fill="#FF6F00"/>
+</svg>

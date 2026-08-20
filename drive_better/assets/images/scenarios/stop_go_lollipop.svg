@@ -1,0 +1,31 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#e8e8e8"/>
+  <!-- Road background -->
+  <rect x="0" y="120" width="300" height="50" fill="#777"/>
+  <!-- Worker figure -->
+  <!-- Head -->
+  <circle cx="150" cy="48" r="18" fill="#f5c88a"/>
+  <!-- Hard hat -->
+  <ellipse cx="150" cy="34" rx="22" ry="10" fill="#FFD700"/>
+  <rect x="128" y="32" width="44" height="8" rx="2" fill="#FFD700"/>
+  <!-- Hi-vis vest body -->
+  <path d="M122,66 L118,118 L182,118 L178,66 Q165,58 150,66 Q135,58 122,66 Z" fill="#FF8C00"/>
+  <!-- Reflective stripes on vest -->
+  <rect x="118" y="84" width="64" height="7" rx="2" fill="#FFD700" opacity="0.9"/>
+  <rect x="118" y="100" width="64" height="7" rx="2" fill="#FFD700" opacity="0.9"/>
+  <!-- Arms -->
+  <!-- Right arm raised holding paddle -->
+  <line x1="178" y1="75" x2="210" y2="55" stroke="#FF8C00" stroke-width="14" stroke-linecap="round"/>
+  <!-- Left arm down -->
+  <line x1="122" y1="75" x2="100" y2="100" stroke="#FF8C00" stroke-width="14" stroke-linecap="round"/>
+  <!-- Legs -->
+  <line x1="135" y1="118" x2="128" y2="158" stroke="#333" stroke-width="12" stroke-linecap="round"/>
+  <line x1="165" y1="118" x2="172" y2="158" stroke="#333" stroke-width="12" stroke-linecap="round"/>
+  <!-- STOP paddle -->
+  <circle cx="228" cy="42" r="28" fill="#cc0000"/>
+  <circle cx="228" cy="42" r="24" fill="#cc0000" stroke="white" stroke-width="3"/>
+  <text x="228" y="50" text-anchor="middle" font-family="Arial" font-size="18" fill="white" font-weight="bold">STOP</text>
+  <!-- Paddle handle -->
+  <line x1="228" y1="70" x2="215" y2="58" stroke="#888" stroke-width="5" stroke-linecap="round"/>
+  <text x="150" y="192" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Signaleur STOP</text>
+</svg>

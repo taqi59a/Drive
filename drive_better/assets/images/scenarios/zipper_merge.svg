@@ -1,0 +1,63 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#4a7c59"/>
+  <!-- Two lanes on left, merge to one on right -->
+  <!-- Left portion: two lanes -->
+  <rect x="0" y="60" width="170" height="40" fill="#777"/>
+  <rect x="0" y="100" width="170" height="40" fill="#777"/>
+  <line x1="0" y1="100" x2="170" y2="100" stroke="white" stroke-width="2" stroke-dasharray="14,8"/>
+  <!-- Merge taper -->
+  <polygon points="170,60 300,80 300,120 170,140" fill="#777"/>
+  <!-- Lane divider (merges) -->
+  <line x1="170" y1="100" x2="250" y2="100" stroke="white" stroke-width="1.5" stroke-dasharray="8,6" opacity="0.4"/>
+  <!-- Road edges -->
+  <line x1="0" y1="60" x2="300" y2="80" stroke="white" stroke-width="2.5"/>
+  <line x1="0" y1="140" x2="300" y2="120" stroke="white" stroke-width="2.5"/>
+  <!-- Cars top lane (blue) -->
+  <g transform="translate(20,67)">
+    <rect x="0" y="0" width="36" height="18" rx="3" fill="#2255aa"/>
+    <rect x="5" y="-5" width="22" height="9" rx="2" fill="#3377cc"/>
+    <circle cx="6" cy="20" r="4" fill="#222"/>
+    <circle cx="28" cy="20" r="4" fill="#222"/>
+  </g>
+  <g transform="translate(90,67)">
+    <rect x="0" y="0" width="36" height="18" rx="3" fill="#2255aa"/>
+    <rect x="5" y="-5" width="22" height="9" rx="2" fill="#3377cc"/>
+    <circle cx="6" cy="20" r="4" fill="#222"/>
+    <circle cx="28" cy="20" r="4" fill="#222"/>
+  </g>
+  <!-- Cars bottom lane (red) -->
+  <g transform="translate(20,108)">
+    <rect x="0" y="0" width="36" height="18" rx="3" fill="#cc3322"/>
+    <rect x="5" y="-5" width="22" height="9" rx="2" fill="#ee4433"/>
+    <circle cx="6" cy="20" r="4" fill="#222"/>
+    <circle cx="28" cy="20" r="4" fill="#222"/>
+  </g>
+  <g transform="translate(90,108)">
+    <rect x="0" y="0" width="36" height="18" rx="3" fill="#cc3322"/>
+    <rect x="5" y="-5" width="22" height="9" rx="2" fill="#ee4433"/>
+    <circle cx="6" cy="20" r="4" fill="#222"/>
+    <circle cx="28" cy="20" r="4" fill="#222"/>
+  </g>
+  <!-- Alternating merged cars -->
+  <g transform="translate(195,87)">
+    <rect x="0" y="0" width="36" height="18" rx="3" fill="#2255aa"/>
+    <rect x="5" y="-5" width="22" height="9" rx="2" fill="#3377cc"/>
+    <circle cx="6" cy="20" r="4" fill="#222"/>
+    <circle cx="28" cy="20" r="4" fill="#222"/>
+  </g>
+  <g transform="translate(248,90)">
+    <rect x="0" y="0" width="36" height="18" rx="3" fill="#cc3322"/>
+    <rect x="5" y="-5" width="22" height="9" rx="2" fill="#ee4433"/>
+    <circle cx="6" cy="20" r="4" fill="#222"/>
+    <circle cx="28" cy="20" r="4" fill="#222"/>
+  </g>
+  <!-- Merge arrows -->
+  <path d="M160,75 Q180,90 195,96" stroke="#FFD700" stroke-width="2.5" fill="none" marker-end="url(#za)"/>
+  <path d="M160,120 Q180,108 195,104" stroke="#FFD700" stroke-width="2.5" fill="none" marker-end="url(#za)"/>
+  <defs>
+    <marker id="za" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#FFD700"/>
+    </marker>
+  </defs>
+  <text x="150" y="178" text-anchor="middle" font-family="Arial" font-size="12" fill="white">Fermeture en zip</text>
+</svg>

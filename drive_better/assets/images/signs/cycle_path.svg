@@ -1,0 +1,22 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="40" width="180" height="120" rx="6" ry="6" fill="#003DA5"/>
+  <!-- Bicycle silhouette -->
+  <!-- Rear wheel -->
+  <circle cx="75" cy="125" r="28" fill="none" stroke="white" stroke-width="5"/>
+  <!-- Front wheel -->
+  <circle cx="135" cy="125" r="28" fill="none" stroke="white" stroke-width="5"/>
+  <!-- Frame -->
+  <line x1="75" y1="125" x2="105" y2="85" stroke="white" stroke-width="5" stroke-linecap="round"/>
+  <line x1="105" y1="85" x2="135" y2="125" stroke="white" stroke-width="5" stroke-linecap="round"/>
+  <line x1="105" y1="85" x2="75" y2="125" stroke="white" stroke-width="5" stroke-linecap="round"/>
+  <!-- Seat tube -->
+  <line x1="98" y1="108" x2="105" y2="85" stroke="white" stroke-width="5" stroke-linecap="round"/>
+  <!-- Seat -->
+  <line x1="88" y1="104" x2="108" y2="104" stroke="white" stroke-width="5" stroke-linecap="round"/>
+  <!-- Handlebars -->
+  <line x1="105" y1="85" x2="130" y2="82" stroke="white" stroke-width="5" stroke-linecap="round"/>
+  <line x1="128" y1="78" x2="130" y2="90" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <!-- Pedal crank -->
+  <circle cx="98" cy="115" r="5" fill="white"/>
+  <line x1="90" y1="120" x2="106" y2="110" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</svg>

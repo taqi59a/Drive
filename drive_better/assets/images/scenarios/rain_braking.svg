@@ -1,0 +1,58 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#b0c0d0"/>
+  <!-- Rain drops -->
+  <g stroke="#6688aa" stroke-width="1.5" opacity="0.7">
+    <line x1="30" y1="10" x2="24" y2="30"/>
+    <line x1="60" y1="5" x2="54" y2="25"/>
+    <line x1="90" y1="15" x2="84" y2="35"/>
+    <line x1="120" y1="8" x2="114" y2="28"/>
+    <line x1="150" y1="12" x2="144" y2="32"/>
+    <line x1="180" y1="6" x2="174" y2="26"/>
+    <line x1="210" y1="18" x2="204" y2="38"/>
+    <line x1="240" y1="10" x2="234" y2="30"/>
+    <line x1="270" y1="14" x2="264" y2="34"/>
+    <line x1="45" y1="38" x2="39" y2="58"/>
+    <line x1="75" y1="32" x2="69" y2="52"/>
+    <line x1="105" y1="42" x2="99" y2="62"/>
+    <line x1="135" y1="36" x2="129" y2="56"/>
+    <line x1="165" y1="40" x2="159" y2="60"/>
+    <line x1="195" y1="34" x2="189" y2="54"/>
+    <line x1="225" y1="44" x2="219" y2="64"/>
+    <line x1="255" y1="38" x2="249" y2="58"/>
+    <line x1="285" y1="42" x2="279" y2="62"/>
+  </g>
+  <!-- Wet road -->
+  <rect x="0" y="100" width="300" height="70" fill="#556677"/>
+  <!-- Water sheen -->
+  <rect x="0" y="100" width="300" height="12" fill="#7799aa" opacity="0.4"/>
+  <line x1="0" y1="135" x2="300" y2="135" stroke="#778899" stroke-width="2" stroke-dasharray="18,10"/>
+  <!-- Front car (stopped/braking) -->
+  <g transform="translate(195,108)">
+    <rect x="0" y="0" width="75" height="30" rx="5" fill="#cc3322"/>
+    <rect x="9" y="-9" width="50" height="18" rx="4" fill="#ee4433"/>
+    <circle cx="13" cy="32" r="7" fill="#222"/>
+    <circle cx="60" cy="32" r="7" fill="#222"/>
+    <rect x="-4" y="8" width="6" height="6" fill="#ff6644"/>
+    <rect x="-4" y="16" width="6" height="6" fill="#ff6644"/>
+  </g>
+  <!-- Rear car (braking, skid marks) -->
+  <g transform="translate(40,108)">
+    <rect x="0" y="0" width="75" height="30" rx="5" fill="#2255aa"/>
+    <rect x="9" y="-9" width="50" height="18" rx="4" fill="#3377cc"/>
+    <circle cx="13" cy="32" r="7" fill="#222"/>
+    <circle cx="60" cy="32" r="7" fill="#222"/>
+    <rect x="71" y="8" width="6" height="6" fill="#ffffaa"/>
+  </g>
+  <!-- Extended wet stopping distance bar -->
+  <rect x="118" y="148" width="74" height="12" rx="3" fill="#4488cc" opacity="0.85"/>
+  <line x1="118" y1="145" x2="118" y2="163" stroke="#2266aa" stroke-width="2"/>
+  <line x1="192" y1="145" x2="192" y2="163" stroke="#2266aa" stroke-width="2"/>
+  <text x="155" y="158" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">+40% mouillé</text>
+  <!-- Skid marks -->
+  <path d="M118,138 L60,138" stroke="#334" stroke-width="3.5" opacity="0.5" stroke-dasharray="5,4"/>
+  <path d="M118,142 L62,142" stroke="#334" stroke-width="2.5" opacity="0.4" stroke-dasharray="5,4"/>
+  <!-- Water splash from tyres -->
+  <path d="M60,137 Q45,128 35,120" stroke="#6699bb" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M75,138 Q62,130 55,122" stroke="#6699bb" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <text x="150" y="192" text-anchor="middle" font-family="Arial" font-size="12" fill="#223344">Freinage par pluie</text>
+</svg>

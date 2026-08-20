@@ -1,0 +1,27 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue background rectangle -->
+  <rect x="10" y="40" width="180" height="120" rx="6" ry="6" fill="#003DA5"/>
+  <!-- Pedestrian adult figure -->
+  <circle cx="55" cy="70" r="7" fill="white"/>
+  <line x1="55" y1="77" x2="55" y2="100" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <line x1="55" y1="83" x2="45" y2="93" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="55" y1="83" x2="65" y2="93" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="55" y1="100" x2="48" y2="118" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="55" y1="100" x2="62" y2="118" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <!-- Child figure (smaller) -->
+  <circle cx="85" cy="76" r="5" fill="white"/>
+  <line x1="85" y1="81" x2="85" y2="98" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="85" y1="86" x2="78" y2="94" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="85" y1="86" x2="92" y2="94" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="85" y1="98" x2="79" y2="113" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="85" y1="98" x2="91" y2="113" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Small car silhouette -->
+  <rect x="110" y="100" width="60" height="22" rx="4" fill="white"/>
+  <rect x="118" y="88" width="42" height="16" rx="4" fill="white"/>
+  <circle cx="122" cy="124" r="6" fill="#003DA5"/>
+  <circle cx="122" cy="124" r="3" fill="white"/>
+  <circle cx="158" cy="124" r="6" fill="#003DA5"/>
+  <circle cx="158" cy="124" r="3" fill="white"/>
+  <!-- Wavy line (road/path) -->
+  <path d="M15 140 Q50 132 90 140 Q130 148 170 140" stroke="white" stroke-width="2.5" fill="none" stroke-dasharray="4,3"/>
+</svg>

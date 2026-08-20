@@ -1,0 +1,38 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#0a0a1a"/>
+  <!-- Road -->
+  <rect x="0" y="110" width="300" height="60" fill="#2a2a3a"/>
+  <line x1="0" y1="140" x2="300" y2="140" stroke="#555" stroke-width="2" stroke-dasharray="20,10"/>
+  <!-- Stars -->
+  <circle cx="30" cy="25" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="80" cy="15" r="1" fill="white" opacity="0.6"/>
+  <circle cx="130" cy="30" r="1.5" fill="white" opacity="0.9"/>
+  <circle cx="200" cy="18" r="1" fill="white" opacity="0.7"/>
+  <circle cx="260" cy="28" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="55" cy="50" r="1" fill="white" opacity="0.5"/>
+  <circle cx="175" cy="55" r="1" fill="white" opacity="0.6"/>
+  <circle cx="240" cy="45" r="1" fill="white" opacity="0.7"/>
+  <!-- Left car headlight beams -->
+  <polygon points="75,118 10,105 10,131" fill="#ffffcc" opacity="0.25"/>
+  <!-- Left car -->
+  <g transform="translate(75,118)">
+    <rect x="0" y="0" width="60" height="26" rx="4" fill="#333"/>
+    <rect x="7" y="-7" width="40" height="14" rx="3" fill="#444"/>
+    <circle cx="10" cy="28" r="6" fill="#111"/>
+    <circle cx="48" cy="28" r="6" fill="#111"/>
+    <rect x="57" y="7" width="8" height="5" fill="#ffffaa"/>
+    <rect x="57" y="13" width="8" height="5" fill="#ffffaa"/>
+  </g>
+  <!-- Right car headlight beams (oncoming) -->
+  <polygon points="195,118 280,105 280,131" fill="#ffffcc" opacity="0.25"/>
+  <!-- Right car -->
+  <g transform="translate(195,118)">
+    <rect x="0" y="0" width="60" height="26" rx="4" fill="#333"/>
+    <rect x="7" y="-7" width="40" height="14" rx="3" fill="#444"/>
+    <circle cx="10" cy="28" r="6" fill="#111"/>
+    <circle cx="48" cy="28" r="6" fill="#111"/>
+    <rect x="-8" y="7" width="8" height="5" fill="#ffffaa"/>
+    <rect x="-8" y="13" width="8" height="5" fill="#ffffaa"/>
+  </g>
+  <text x="150" y="190" text-anchor="middle" font-family="Arial" font-size="12" fill="#aaa">Conduite de nuit</text>
+</svg>

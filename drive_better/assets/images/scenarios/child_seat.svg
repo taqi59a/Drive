@@ -1,0 +1,27 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#e8f0f8"/>
+  <!-- Car interior side view -->
+  <!-- Seat -->
+  <rect x="80" y="100" width="140" height="70" rx="8" fill="#8899aa"/>
+  <rect x="80" y="70" width="30" height="70" rx="6" fill="#8899aa"/>
+  <!-- Child seat -->
+  <rect x="115" y="80" width="70" height="85" rx="10" fill="#e05020"/>
+  <rect x="120" y="85" width="60" height="55" rx="8" fill="#ee6633"/>
+  <!-- Child in seat -->
+  <circle cx="150" cy="98" r="14" fill="#f5c88a"/>
+  <!-- Face -->
+  <circle cx="145" cy="96" r="2" fill="#333"/>
+  <circle cx="155" cy="96" r="2" fill="#333"/>
+  <path d="M145,103 Q150,107 155,103" stroke="#333" stroke-width="1.5" fill="none"/>
+  <!-- Child body -->
+  <rect x="138" y="112" width="24" height="20" rx="5" fill="#5599dd"/>
+  <!-- Seatbelt over child -->
+  <line x1="115" y1="85" x2="150" y2="140" stroke="#FFD700" stroke-width="4" stroke-linecap="round"/>
+  <line x1="185" y1="85" x2="150" y2="140" stroke="#FFD700" stroke-width="4" stroke-linecap="round"/>
+  <line x1="140" y1="140" x2="160" y2="140" stroke="#FFD700" stroke-width="4" stroke-linecap="round"/>
+  <!-- Buckle -->
+  <rect x="143" y="136" width="14" height="10" rx="3" fill="#cc8800"/>
+  <!-- Car window suggestion -->
+  <rect x="50" y="40" width="200" height="50" rx="8" fill="#aaddff" opacity="0.4" stroke="#8899aa" stroke-width="2"/>
+  <text x="150" y="192" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Siège enfant</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#e8e8e8"/>
+  <!-- Road -->
+  <rect x="0" y="90" width="300" height="60" fill="#777"/>
+  <line x1="0" y1="120" x2="300" y2="120" stroke="white" stroke-width="2" stroke-dasharray="20,10"/>
+  <!-- Car -->
+  <g transform="translate(18,97)">
+    <rect x="0" y="0" width="60" height="28" rx="4" fill="#2255aa"/>
+    <rect x="8" y="-8" width="38" height="16" rx="3" fill="#3377cc"/>
+    <circle cx="10" cy="30" r="6" fill="#222"/>
+    <circle cx="48" cy="30" r="6" fill="#222"/>
+    <rect x="57" y="7" width="7" height="5" fill="#ffffaa"/>
+  </g>
+  <!-- Reaction distance bar (yellow) -->
+  <rect x="82" y="108" width="70" height="14" rx="3" fill="#FFD700"/>
+  <line x1="82" y1="105" x2="82" y2="125" stroke="#aa8800" stroke-width="2"/>
+  <line x1="152" y1="105" x2="152" y2="125" stroke="#aa8800" stroke-width="2"/>
+  <text x="117" y="119" text-anchor="middle" font-family="Arial" font-size="8" fill="#333" font-weight="bold">Réaction</text>
+  <!-- Braking distance bar (red) -->
+  <rect x="152" y="108" width="120" height="14" rx="3" fill="#cc3322"/>
+  <line x1="152" y1="105" x2="152" y2="125" stroke="#881111" stroke-width="2"/>
+  <line x1="272" y1="105" x2="272" y2="125" stroke="#881111" stroke-width="2"/>
+  <text x="212" y="119" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">Freinage</text>
+  <!-- Arrows -->
+  <polygon points="82,102 87,97 87,107" fill="#aa8800"/>
+  <polygon points="272,102 267,97 267,107" fill="#881111"/>
+  <!-- Speed label -->
+  <rect x="108" y="58" width="84" height="26" rx="6" fill="white" stroke="#555" stroke-width="1.5"/>
+  <text x="150" y="76" text-anchor="middle" font-family="Arial" font-size="14" fill="#333" font-weight="bold">50 km/h</text>
+  <!-- Hazard at end -->
+  <polygon points="272,88 284,110 260,110" fill="#FFD700" stroke="#cc8800" stroke-width="1.5"/>
+  <text x="272" y="106" text-anchor="middle" font-family="Arial" font-size="9" fill="#333" font-weight="bold">!</text>
+  <text x="150" y="176" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Distance d'arrêt</text>
+</svg>

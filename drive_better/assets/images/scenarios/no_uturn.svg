@@ -1,0 +1,12 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- White background -->
+  <rect x="0" y="0" width="300" height="200" fill="#f5f5f5"/>
+  <!-- Red circle border -->
+  <circle cx="150" cy="100" r="88" fill="white" stroke="#E53935" stroke-width="12"/>
+  <!-- U-turn arrow -->
+  <path d="M110 140 L110 90 Q110 50 150 50 Q190 50 190 90 L190 130" fill="none" stroke="#333" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arrow head pointing left/down -->
+  <polygon points="190,130 174,115 206,115" fill="#333"/>
+  <!-- Red diagonal bar -->
+  <line x1="75" y1="38" x2="225" y2="162" stroke="#E53935" stroke-width="16" stroke-linecap="round"/>
+</svg>

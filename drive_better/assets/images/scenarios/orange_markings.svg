@@ -1,0 +1,21 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f0f4f8"/>
+  <text x="150" y="18" text-anchor="middle" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">TEMPORARY ORANGE MARKINGS</text>
+  <!-- Road surface -->
+  <rect x="0" y="55" width="300" height="115" fill="#888"/>
+  <!-- Permanent white markings (underneath / faded) -->
+  <line x1="0" y1="112" x2="300" y2="112" stroke="white" stroke-width="3" stroke-dasharray="18,12" opacity="0.4"/>
+  <line x1="0" y1="80" x2="300" y2="80" stroke="white" stroke-width="2" opacity="0.35"/>
+  <line x1="0" y1="162" x2="300" y2="162" stroke="white" stroke-width="2" opacity="0.35"/>
+  <!-- Temporary orange markings (on top) -->
+  <line x1="0" y1="115" x2="300" y2="115" stroke="#e67e22" stroke-width="4" stroke-dasharray="18,12"/>
+  <line x1="0" y1="85" x2="300" y2="85" stroke="#e67e22" stroke-width="3"/>
+  <line x1="0" y1="158" x2="300" y2="158" stroke="#e67e22" stroke-width="3"/>
+  <!-- Legend box -->
+  <rect x="25" y="178" width="110" height="18" rx="3" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <line x1="32" y1="187" x2="58" y2="187" stroke="white" stroke-width="3" stroke-dasharray="6,4" opacity="0.5"/>
+  <text x="65" y="191" font-family="Arial" font-size="9" fill="#555">White (permanent)</text>
+  <rect x="158" y="178" width="118" height="18" rx="3" fill="#fff" stroke="#ccc" stroke-width="1"/>
+  <line x1="165" y1="187" x2="191" y2="187" stroke="#e67e22" stroke-width="3" stroke-dasharray="6,4"/>
+  <text x="198" y="191" font-family="Arial" font-size="9" fill="#e67e22">Orange (temporary)</text>
+</svg>

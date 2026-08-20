@@ -1,0 +1,38 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background / road -->
+  <rect x="0" y="0" width="300" height="200" fill="#bbb"/>
+  <rect x="30" y="0" width="240" height="200" fill="#555"/>
+  <!-- Slippery road marks (wavy) -->
+  <path d="M50 160 Q80 150 110 160 Q140 170 170 160 Q200 150 230 160 Q260 170 280 160" stroke="#4FC3F7" stroke-width="3" fill="none" stroke-dasharray="8,5" opacity="0.7"/>
+  <path d="M50 175 Q80 165 110 175 Q140 185 170 175 Q200 165 230 175 Q260 185 280 175" stroke="#4FC3F7" stroke-width="3" fill="none" stroke-dasharray="8,5" opacity="0.5"/>
+  <!-- Skid marks under car -->
+  <line x1="118" y1="120" x2="118" y2="155" stroke="#333" stroke-width="4" stroke-dasharray="5,4" opacity="0.7"/>
+  <line x1="130" y1="120" x2="130" y2="155" stroke="#333" stroke-width="4" stroke-dasharray="5,4" opacity="0.7"/>
+  <line x1="170" y1="120" x2="170" y2="155" stroke="#333" stroke-width="4" stroke-dasharray="5,4" opacity="0.7"/>
+  <line x1="182" y1="120" x2="182" y2="155" stroke="#333" stroke-width="4" stroke-dasharray="5,4" opacity="0.7"/>
+  <!-- Car top-down -->
+  <g transform="translate(150,105)">
+    <rect x="-32" y="-38" width="64" height="76" rx="10" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+    <rect x="-24" y="-28" width="48" height="22" rx="4" fill="#B3E5FC"/>
+    <rect x="-24" y="12" width="48" height="20" rx="4" fill="#B3E5FC"/>
+    <!-- Wheels -->
+    <rect x="-40" y="-26" width="10" height="16" rx="3" fill="#222"/>
+    <rect x="30" y="-26" width="10" height="16" rx="3" fill="#222"/>
+    <rect x="-40" y="14" width="10" height="16" rx="3" fill="#222"/>
+    <rect x="30" y="14" width="10" height="16" rx="3" fill="#222"/>
+  </g>
+  <!-- ABS badge -->
+  <circle cx="150" cy="105" r="18" fill="#1A237E" stroke="#0D47A1" stroke-width="2"/>
+  <text x="150" y="110" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="white">ABS</text>
+  <!-- Braking arrow -->
+  <path d="M150 45 L150 62" stroke="#E53935" stroke-width="4" fill="none" marker-end="url(#ba)" stroke-linecap="round"/>
+  <!-- Speed lines above car -->
+  <line x1="110" y1="30" x2="110" y2="50" stroke="#78909C" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <line x1="150" y1="25" x2="150" y2="44" stroke="#78909C" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <line x1="190" y1="30" x2="190" y2="50" stroke="#78909C" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <defs>
+    <marker id="ba" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+      <path d="M0,0 L0,9 L9,4.5 Z" fill="#E53935"/>
+    </marker>
+  </defs>
+</svg>

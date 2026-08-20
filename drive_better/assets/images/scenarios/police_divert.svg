@@ -1,0 +1,46 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f0f4f8"/>
+  <!-- Road -->
+  <rect x="0" y="130" width="300" height="50" fill="#777"/>
+  <line x1="0" y1="155" x2="300" y2="155" stroke="white" stroke-width="2" stroke-dasharray="15,10"/>
+  <!-- Police officer -->
+  <!-- Hat -->
+  <rect x="138" y="28" width="34" height="12" rx="3" fill="#1a1a5e"/>
+  <rect x="133" y="37" width="44" height="6" rx="2" fill="#1a1a5e"/>
+  <!-- Badge on hat -->
+  <rect x="151" y="30" width="8" height="8" rx="1" fill="#f1c40f"/>
+  <!-- Head -->
+  <circle cx="155" cy="54" r="14" fill="#f5cba7"/>
+  <!-- Uniform body -->
+  <rect x="135" y="68" width="40" height="45" rx="4" fill="#1a1a5e"/>
+  <!-- Hi-vis/badge -->
+  <rect x="145" y="72" width="10" height="8" rx="1" fill="#f1c40f"/>
+  <!-- Belt -->
+  <rect x="133" y="105" width="44" height="6" rx="2" fill="#555"/>
+  <!-- Left arm (directing traffic — raised) -->
+  <line x1="135" y1="80" x2="108" y2="60" stroke="#1a1a5e" stroke-width="9" stroke-linecap="round"/>
+  <!-- Right arm (holding wand/baton — pointing right) -->
+  <line x1="175" y1="80" x2="205" y2="72" stroke="#1a1a5e" stroke-width="9" stroke-linecap="round"/>
+  <!-- Wand/baton -->
+  <line x1="205" y1="72" x2="230" y2="65" stroke="#e74c3c" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="232" cy="64" r="6" fill="#e74c3c"/>
+  <!-- Legs -->
+  <line x1="148" y1="113" x2="144" y2="138" stroke="#1a1a5e" stroke-width="9" stroke-linecap="round"/>
+  <line x1="162" y1="113" x2="166" y2="138" stroke="#1a1a5e" stroke-width="9" stroke-linecap="round"/>
+  <!-- Shoes -->
+  <ellipse cx="142" cy="140" rx="8" ry="4" fill="#222"/>
+  <ellipse cx="168" cy="140" rx="8" ry="4" fill="#222"/>
+  <!-- Car being directed -->
+  <rect x="18" y="135" width="60" height="28" rx="6" fill="#3a7bd5"/>
+  <rect x="26" y="124" width="42" height="18" rx="4" fill="#3a7bd5"/>
+  <rect x="28" y="127" width="16" height="12" rx="2" fill="#a8d8f0"/>
+  <rect x="48" y="127" width="16" height="12" rx="2" fill="#a8d8f0"/>
+  <circle cx="32" cy="164" r="9" fill="#222"/>
+  <circle cx="68" cy="164" r="9" fill="#222"/>
+  <!-- Direction arrow -->
+  <path d="M78,148 Q100,135 125,132" fill="none" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="120,126 130,134 120,140" fill="#e74c3c"/>
+  <!-- POLICE text on uniform -->
+  <text x="155" y="100" text-anchor="middle" font-family="Arial" font-size="7" fill="white" font-weight="bold">POLICE</text>
+  <text x="150" y="196" text-anchor="middle" font-family="Arial" font-size="11" fill="#2c3e50" font-weight="bold">POLICE TRAFFIC DIVERSION</text>
+</svg>

@@ -1,0 +1,48 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#4a7c59"/>
+  <!-- Road top-down, two lanes -->
+  <rect x="0" y="40" width="300" height="130" fill="#777"/>
+  <line x1="0" y1="105" x2="300" y2="105" stroke="white" stroke-width="2" stroke-dasharray="18,10"/>
+  <line x1="0" y1="40" x2="300" y2="40" stroke="white" stroke-width="2.5"/>
+  <line x1="0" y1="170" x2="300" y2="170" stroke="white" stroke-width="2.5"/>
+  <!-- Cyclist (top-down) in right lane -->
+  <g transform="translate(60,130)">
+    <!-- Bike wheels -->
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#555" stroke-width="3"/>
+    <circle cx="0" cy="-28" r="10" fill="none" stroke="#555" stroke-width="3"/>
+    <!-- Frame -->
+    <line x1="0" y1="-10" x2="0" y2="-18" stroke="#777" stroke-width="3"/>
+    <!-- Rider body -->
+    <ellipse cx="0" cy="-22" rx="6" ry="10" fill="#ee6600"/>
+    <circle cx="0" cy="-35" r="6" fill="#f5c88a"/>
+    <!-- Helmet -->
+    <ellipse cx="0" cy="-38" rx="7" ry="5" fill="#ee6600"/>
+    <!-- Arms -->
+    <line x1="-6" y1="-26" x2="-12" y2="-18" stroke="#f5c88a" stroke-width="2.5"/>
+    <line x1="6" y1="-26" x2="12" y2="-18" stroke="#f5c88a" stroke-width="2.5"/>
+  </g>
+  <!-- Car overtaking in left lane -->
+  <g transform="translate(100,55)">
+    <rect x="-22" y="-12" width="44" height="24" rx="4" fill="#2255aa"/>
+    <rect x="-15" y="-19" width="30" height="14" rx="3" fill="#3377cc"/>
+    <circle cx="-14" cy="14" r="6" fill="#222"/>
+    <circle cx="14" cy="14" r="6" fill="#222"/>
+    <rect x="19" y="-5" width="6" height="5" fill="#ffffaa"/>
+  </g>
+  <!-- Gap measurement arrow -->
+  <line x1="122" y1="90" x2="122" y2="130" stroke="#FFD700" stroke-width="2.5"/>
+  <polygon points="122,90 117,100 127,100" fill="#FFD700"/>
+  <polygon points="122,130 117,120 127,120" fill="#FFD700"/>
+  <!-- 1m+ label -->
+  <rect x="128" y="102" width="42" height="18" rx="4" fill="white" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="149" y="115" text-anchor="middle" font-family="Arial" font-size="12" fill="#333" font-weight="bold">1 m+</text>
+  <!-- Direction arrow -->
+  <path d="M20,72 L55,72" stroke="#FFD700" stroke-width="2" fill="none" marker-end="url(#cyA)"/>
+  <path d="M20,140 L45,140" stroke="#FFD700" stroke-width="2" fill="none" marker-end="url(#cyA)"/>
+  <defs>
+    <marker id="cyA" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#FFD700"/>
+    </marker>
+  </defs>
+  <text x="150" y="192" text-anchor="middle" font-family="Arial" font-size="12" fill="white">Dépassement cycliste</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="300" height="200" fill="#F5F5F5"/>
+  <!-- Card 1: Insurance (back, green) -->
+  <g transform="rotate(-10,150,100)">
+    <rect x="55" y="45" width="110" height="75" rx="7" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+    <text x="110" y="68" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="white">INSURANCE</text>
+    <line x1="68" y1="78" x2="152" y2="78" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+    <line x1="68" y1="88" x2="152" y2="88" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+    <line x1="68" y1="98" x2="140" y2="98" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+  </g>
+  <!-- Card 2: Registration (middle, blue) -->
+  <g transform="rotate(5,150,100)">
+    <rect x="80" y="55" width="110" height="75" rx="7" fill="#1565C0" stroke="#0D47A1" stroke-width="2"/>
+    <text x="135" y="78" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="white">REGISTRATION</text>
+    <line x1="93" y1="88" x2="177" y2="88" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+    <line x1="93" y1="98" x2="177" y2="98" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+    <line x1="93" y1="108" x2="165" y2="108" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+  </g>
+  <!-- Card 3: Driving Licence (front, red) -->
+  <rect x="105" y="65" width="110" height="75" rx="7" fill="#C62828" stroke="#B71C1C" stroke-width="2"/>
+  <!-- EU stars small -->
+  <g transform="translate(120,82)">
+    <circle cx="0" cy="-6" r="1.8" fill="#FFD700"/>
+    <circle cx="5" cy="-4" r="1.8" fill="#FFD700"/>
+    <circle cx="6" cy="0" r="1.8" fill="#FFD700"/>
+    <circle cx="5" cy="4" r="1.8" fill="#FFD700"/>
+    <circle cx="0" cy="6" r="1.8" fill="#FFD700"/>
+    <circle cx="-5" cy="4" r="1.8" fill="#FFD700"/>
+    <circle cx="-6" cy="0" r="1.8" fill="#FFD700"/>
+    <circle cx="-5" cy="-4" r="1.8" fill="#FFD700"/>
+  </g>
+  <text x="160" y="88" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="white">DRIVING</text>
+  <text x="160" y="100" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="white">LICENCE</text>
+  <line x1="118" y1="110" x2="202" y2="110" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+  <line x1="118" y1="120" x2="195" y2="120" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+  <!-- Labels at bottom -->
+  <text x="90" y="165" text-anchor="middle" font-family="Arial" font-size="9" fill="#4CAF50" font-weight="bold">Insurance</text>
+  <text x="150" y="175" text-anchor="middle" font-family="Arial" font-size="9" fill="#1565C0" font-weight="bold">Registration</text>
+  <text x="210" y="165" text-anchor="middle" font-family="Arial" font-size="9" fill="#C62828" font-weight="bold">Licence</text>
+</svg>

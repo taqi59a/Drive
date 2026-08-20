@@ -1,0 +1,39 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="300" height="200" fill="#E3F2FD"/>
+  <!-- Snowflake left side -->
+  <g transform="translate(80,100)">
+    <!-- Main axes -->
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#1565C0" stroke-width="5" stroke-linecap="round"/>
+    <line x1="0" y1="-50" x2="0" y2="50" stroke="#1565C0" stroke-width="5" stroke-linecap="round"/>
+    <line x1="-35" y1="-35" x2="35" y2="35" stroke="#1565C0" stroke-width="5" stroke-linecap="round"/>
+    <line x1="35" y1="-35" x2="-35" y2="35" stroke="#1565C0" stroke-width="5" stroke-linecap="round"/>
+    <!-- Branch ticks -->
+    <line x1="-50" y1="0" x2="-38" y2="-12" stroke="#1565C0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-50" y1="0" x2="-38" y2="12" stroke="#1565C0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="50" y1="0" x2="38" y2="-12" stroke="#1565C0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="50" y1="0" x2="38" y2="12" stroke="#1565C0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="-50" x2="-12" y2="-38" stroke="#1565C0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="-50" x2="12" y2="-38" stroke="#1565C0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="50" x2="-12" y2="38" stroke="#1565C0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="50" x2="12" y2="38" stroke="#1565C0" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="8" fill="#1565C0"/>
+  </g>
+  <!-- Divider -->
+  <line x1="155" y1="20" x2="155" y2="180" stroke="#90CAF9" stroke-width="2" stroke-dasharray="6,4"/>
+  <!-- Winter tyre symbol right side -->
+  <g transform="translate(215,100)">
+    <!-- Tyre outline -->
+    <circle cx="0" cy="0" r="65" fill="#333" stroke="#111" stroke-width="3"/>
+    <circle cx="0" cy="0" r="42" fill="#777" stroke="#555" stroke-width="2"/>
+    <circle cx="0" cy="0" r="18" fill="#aaa"/>
+    <!-- Snowflake inside tyre -->
+    <line x1="-22" y1="0" x2="22" y2="0" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="-22" x2="0" y2="22" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <line x1="-15" y1="-15" x2="15" y2="15" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <line x1="15" y1="-15" x2="-15" y2="15" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="4" fill="white"/>
+    <!-- M+S text -->
+    <text x="0" y="72" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="#1565C0">M+S</text>
+  </g>
+</svg>

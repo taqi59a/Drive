@@ -1,0 +1,23 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="40" width="180" height="120" rx="6" fill="#003DA5"/>
+  <!-- Hard hat worker silhouette -->
+  <!-- Hard hat -->
+  <ellipse cx="100" cy="72" rx="24" ry="10" fill="white"/>
+  <rect x="78" y="72" width="44" height="6" rx="0" fill="white"/>
+  <!-- Brim extension -->
+  <rect x="72" y="75" width="56" height="4" rx="2" fill="white"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="84" rx="14" ry="12" fill="white"/>
+  <!-- Body -->
+  <rect x="82" y="96" width="36" height="32" rx="4" fill="white"/>
+  <!-- Arms - holding shovel -->
+  <line x1="82" y1="102" x2="62" y2="118" stroke="white" stroke-width="7" stroke-linecap="round"/>
+  <line x1="118" y1="102" x2="138" y2="118" stroke="white" stroke-width="7" stroke-linecap="round"/>
+  <!-- Shovel handle -->
+  <line x1="138" y1="118" x2="145" y2="148" stroke="white" stroke-width="5" stroke-linecap="round"/>
+  <!-- Shovel head -->
+  <ellipse cx="145" cy="152" rx="9" ry="6" fill="white"/>
+  <!-- Legs -->
+  <line x1="92" y1="128" x2="86" y2="158" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <line x1="108" y1="128" x2="114" y2="158" stroke="white" stroke-width="8" stroke-linecap="round"/>
+</svg>

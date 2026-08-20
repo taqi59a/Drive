@@ -1,0 +1,37 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#e8f4e8"/>
+  <!-- Main motorway -->
+  <rect x="0" y="80" width="300" height="70" fill="#666"/>
+  <line x1="0" y1="115" x2="300" y2="115" stroke="white" stroke-width="2" stroke-dasharray="20,15"/>
+  <!-- Slip road merging from right -->
+  <path d="M300,20 Q240,20 200,80" stroke="#777" stroke-width="35" fill="none" stroke-linecap="butt"/>
+  <path d="M300,20 Q240,20 200,80" stroke="#666" stroke-width="30" fill="none" stroke-linecap="butt"/>
+  <!-- Dashed line on slip road -->
+  <path d="M300,10 Q238,10 196,72" stroke="white" stroke-width="2" fill="none" stroke-dasharray="12,8"/>
+  <!-- Car on motorway -->
+  <g transform="translate(50,95)">
+    <rect x="0" y="0" width="50" height="20" rx="4" fill="#3498db" stroke="#2980b9" stroke-width="1.5"/>
+    <path d="M10,0 Q16,-12 36,-12 L43,0 Z" fill="#3498db" stroke="#2980b9" stroke-width="1.5"/>
+    <rect x="12" y="-10" width="12" height="9" rx="2" fill="#aad4f0"/>
+    <rect x="26" y="-10" width="12" height="9" rx="2" fill="#aad4f0"/>
+    <circle cx="12" cy="20" r="6" fill="#222"/>
+    <circle cx="38" cy="20" r="6" fill="#222"/>
+  </g>
+  <!-- Merging car on slip road -->
+  <g transform="translate(218,52) rotate(-40)">
+    <rect x="0" y="0" width="45" height="18" rx="4" fill="#e74c3c" stroke="#c0392b" stroke-width="1.5"/>
+    <path d="M8,0 Q14,-11 32,-11 L38,0 Z" fill="#e74c3c" stroke="#c0392b" stroke-width="1.5"/>
+    <circle cx="10" cy="18" r="6" fill="#222"/>
+    <circle cx="35" cy="18" r="6" fill="#222"/>
+  </g>
+  <!-- Yield arrow -->
+  <path d="M230,95 L210,95" stroke="#f39c12" stroke-width="3" fill="none" marker-end="url(#yieldArr)"/>
+  <defs>
+    <marker id="yieldArr" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#f39c12"/>
+    </marker>
+  </defs>
+  <!-- YIELD label -->
+  <text x="248" y="90" font-size="10" font-family="Arial" font-weight="bold" fill="#f39c12">YIELD</text>
+  <text x="150" y="185" font-family="Arial" font-size="11" fill="#444" text-anchor="middle" font-weight="bold">SLIP ROAD — YIELD TO MOTORWAY TRAFFIC</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#e8f4ff"/>
+  <!-- Wet road -->
+  <rect x="0" y="140" width="300" height="60" fill="#556"/>
+  <!-- Water on road -->
+  <ellipse cx="150" cy="148" rx="120" ry="8" fill="#88aacc" opacity="0.5"/>
+  <!-- Tyre cross-section -->
+  <ellipse cx="150" cy="110" rx="55" ry="55" fill="#333"/>
+  <ellipse cx="150" cy="110" rx="42" ry="42" fill="#555"/>
+  <ellipse cx="150" cy="110" rx="20" ry="20" fill="#888"/>
+  <!-- Tyre tread blocks -->
+  <rect x="105" y="90" width="12" height="8" rx="2" fill="#222"/>
+  <rect x="105" y="104" width="12" height="8" rx="2" fill="#222"/>
+  <rect x="105" y="118" width="12" height="8" rx="2" fill="#222"/>
+  <rect x="183" y="90" width="12" height="8" rx="2" fill="#222"/>
+  <rect x="183" y="104" width="12" height="8" rx="2" fill="#222"/>
+  <rect x="183" y="118" width="12" height="8" rx="2" fill="#222"/>
+  <rect x="130" y="65" width="8" height="12" rx="2" fill="#222"/>
+  <rect x="144" y="65" width="8" height="12" rx="2" fill="#222"/>
+  <rect x="158" y="65" width="8" height="12" rx="2" fill="#222"/>
+  <rect x="130" y="143" width="8" height="12" rx="2" fill="#222"/>
+  <rect x="144" y="143" width="8" height="12" rx="2" fill="#222"/>
+  <rect x="158" y="143" width="8" height="12" rx="2" fill="#222"/>
+  <!-- Water splash lines -->
+  <path d="M95,145 Q70,130 55,115" stroke="#4488cc" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M100,148 Q80,140 60,135" stroke="#4488cc" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M205,145 Q230,130 245,115" stroke="#4488cc" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M200,148 Q220,140 240,135" stroke="#4488cc" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Water wedge under tyre -->
+  <path d="M110,155 Q150,143 190,155" stroke="#aaccee" stroke-width="4" fill="#aaccee" opacity="0.5"/>
+  <!-- Water drops -->
+  <circle cx="60" cy="108" r="4" fill="#4488cc" opacity="0.7"/>
+  <circle cx="50" cy="118" r="3" fill="#4488cc" opacity="0.6"/>
+  <circle cx="242" cy="108" r="4" fill="#4488cc" opacity="0.7"/>
+  <circle cx="252" cy="120" r="3" fill="#4488cc" opacity="0.6"/>
+  <text x="150" y="192" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Aquaplaning</text>
+</svg>

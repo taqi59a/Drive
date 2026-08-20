@@ -1,0 +1,52 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#e8e8e8"/>
+  <!-- Road with lane narrowing -->
+  <polygon points="0,60 300,80 300,120 0,140" fill="#777"/>
+  <!-- Lane narrowing line -->
+  <line x1="0" y1="100" x2="150" y2="100" stroke="white" stroke-width="2" stroke-dasharray="18,10"/>
+  <!-- Road works barrier line -->
+  <line x1="150" y1="80" x2="300" y2="100" stroke="#FF6600" stroke-width="3" stroke-dasharray="12,6"/>
+  <!-- Warning triangle sign -->
+  <g transform="translate(50,25)">
+    <polygon points="0,-28 24,14 -24,14" fill="#FFD700" stroke="#cc8800" stroke-width="3"/>
+    <polygon points="0,-16 13,8 -13,8" fill="#cc8800"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial" font-size="11" fill="#FFD700" font-weight="bold">!</text>
+  </g>
+  <!-- Cones row -->
+  <g transform="translate(145,75)">
+    <polygon points="0,-20 8,0 -8,0" fill="#FF6600"/>
+    <rect x="-10" y="0" width="20" height="5" rx="1" fill="#ff8833"/>
+    <rect x="-6" y="-13" width="12" height="3" fill="white" opacity="0.8"/>
+  </g>
+  <g transform="translate(175,82)">
+    <polygon points="0,-20 8,0 -8,0" fill="#FF6600"/>
+    <rect x="-10" y="0" width="20" height="5" rx="1" fill="#ff8833"/>
+    <rect x="-6" y="-13" width="12" height="3" fill="white" opacity="0.8"/>
+  </g>
+  <g transform="translate(205,89)">
+    <polygon points="0,-20 8,0 -8,0" fill="#FF6600"/>
+    <rect x="-10" y="0" width="20" height="5" rx="1" fill="#ff8833"/>
+    <rect x="-6" y="-13" width="12" height="3" fill="white" opacity="0.8"/>
+  </g>
+  <g transform="translate(235,96)">
+    <polygon points="0,-20 8,0 -8,0" fill="#FF6600"/>
+    <rect x="-10" y="0" width="20" height="5" rx="1" fill="#ff8833"/>
+    <rect x="-6" y="-13" width="12" height="3" fill="white" opacity="0.8"/>
+  </g>
+  <g transform="translate(265,103)">
+    <polygon points="0,-20 8,0 -8,0" fill="#FF6600"/>
+    <rect x="-10" y="0" width="20" height="5" rx="1" fill="#ff8833"/>
+    <rect x="-6" y="-13" width="12" height="3" fill="white" opacity="0.8"/>
+  </g>
+  <!-- Car navigating narrowed lane -->
+  <g transform="translate(28,78)">
+    <rect x="0" y="0" width="55" height="26" rx="4" fill="#2255aa"/>
+    <rect x="7" y="-8" width="35" height="16" rx="3" fill="#3377cc"/>
+    <circle cx="9" cy="28" r="6" fill="#222"/>
+    <circle cx="44" cy="28" r="6" fill="#222"/>
+  </g>
+  <!-- Road works sign text -->
+  <rect x="105" y="20" width="100" height="28" rx="4" fill="#FF6600"/>
+  <text x="155" y="39" text-anchor="middle" font-family="Arial" font-size="13" fill="white" font-weight="bold">TRAVAUX</text>
+  <text x="150" y="192" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Zone de travaux</text>
+</svg>

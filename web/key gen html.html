@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>License Key Generator — Admin Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #151d30;
+      --input: #0e1424;
+      --text: #f1f5f9;
+      --text-muted: #64748b;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --success: #10b981;
+      --error: #ef4444;
+      --border: #1e293b;
+      --danger-bg: #450a0a;
+      --danger-text: #fca5a5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .warning-banner {
+      background-color: var(--danger-bg);
+      color: var(--danger-text);
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      width: 100%;
+      max-width: 580px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(239, 68, 68, 0.2);
+    }
+
+    .card {
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 580px;
+      padding: 30px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    label span {
+      color: var(--error);
+    }
+
+    input[type="text"], select {
+      width: 100%;
+      background-color: var(--input);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    input[type="text"]:focus, select:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+
+    .mono-input {
+      font-family: 'JetBrains Mono', monospace !important;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .radio-group, .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .choice-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      background-color: var(--input);
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      user-select: none;
+      transition: background-color 0.2s;
+    }
+
+    .choice-item:hover {
+      background-color: var(--border);
+    }
+
+    .choice-item input {
+      cursor: pointer;
+      accent-color: var(--accent);
+    }
+
+    .shortcuts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .btn-shortcut {
+      background-color: var(--input);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-shortcut:hover {
+      background-color: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .btn-primary {
+      width: 100%;
+      background-color: var(--accent);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.1s;
+      margin-top: 10px;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+    }
+
+    .btn-primary:active {
+      transform: scale(0.98);
+    }
+
+    .output-section {
+      margin-top: 24px;
+      background-color: var(--input);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      display: none;
+      animation: fadeIn 0.3s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .output-header {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .key-display {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--success);
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      margin-bottom: 16px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .key-display::after {
+      content: 'Click to copy';
+      position: absolute;
+      bottom: 2px;
+      right: 8px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      font-weight: normal;
+      letter-spacing: 0;
+    }
+
+    .output-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .btn-secondary {
+      background-color: var(--border);
+      color: var(--text);
+      font-weight: 600;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background-color 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background-color: #334155;
+    }
+
+    .status-toast {
+      position: fixed;
+      bottom: 20px;
+      background-color: var(--success);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .status-toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="warning-banner">
+    ⚠ ADMIN TOOL — Private Key Generator. Do NOT distribute to customers.
+  </div>
+
+  <div class="card">
+    <h1>🔑 Key Generator</h1>
+    <div class="subtitle">Generate activation keys and license.dat files offline.</div>
+
+    <form id="keygen-form" onsubmit="event.preventDefault();">
+      
+      <!-- Machine ID -->
+      <div class="form-group">
+        <label for="machine-id">Machine ID <span>*</span> (8-char hex)</label>
+        <input type="text" id="machine-id" class="mono-input" maxlength="8" placeholder="E.g. A1B2C3D4" autocomplete="off" required>
+      </div>
+
+      <!-- Issued To -->
+      <div class="form-group">
+        <label for="issued-to">Issued To (Customer Name / Company)</label>
+        <input type="text" id="issued-to" placeholder="E.g. Acme Corp">
+      </div>
+
+      <!-- License Type -->
+      <div class="form-group">
+        <label>License Type</label>
+        <div class="radio-group">
+          <label class="choice-item">
+            <input type="radio" name="license-type" value="full" checked> Full
+          </label>
+          <label class="choice-item">
+            <input type="radio" name="license-type" value="trial"> Trial
+          </label>
+          <label class="choice-item">
+            <input type="radio" name="license-type" value="enterprise"> Enterprise
+          </label>
+          <label class="choice-item">
+            <input type="radio" name="license-type" value="academic"> Academic
+          </label>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="form-group">
+        <label>Enabled Features</label>
+        <div class="checkbox-group">
+          <label class="choice-item">
+            <input type="checkbox" name="features" value="all" checked> All
+          </label>
+          <label class="choice-item">
+            <input type="checkbox" name="features" value="pos"> POS
+          </label>
+          <label class="choice-item">
+            <input type="checkbox" name="features" value="inventory"> Inventory
+          </label>
+          <label class="choice-item">
+            <input type="checkbox" name="features" value="reports"> Reports
+          </label>
+          <label class="choice-item">
+            <input type="checkbox" name="features" value="multi_user"> Multi-User
+          </label>
+          <label class="choice-item">
+            <input type="checkbox" name="features" value="api"> API
+          </label>
+        </div>
+      </div>
+
+      <!-- Expiry -->
+      <div class="form-group">
+        <label for="expiry-date">Expires (ISO Datetime - UTC, blank = perpetual)</label>
+        <input type="text" id="expiry-date" placeholder="YYYY-MM-DDTHH:MM:SSZ">
+        <div class="shortcuts">
+          <button type="button" class="btn-shortcut" onclick="setExpiryDays(30)">30 Days</button>
+          <button type="button" class="btn-shortcut" onclick="setExpiryDays(90)">90 Days</button>
+          <button type="button" class="btn-shortcut" onclick="setExpiryDays(365)">1 Year</button>
+          <button type="button" class="btn-shortcut" onclick="setExpiryDays(0)">Perpetual ∞</button>
+        </div>
+      </div>
+
+      <!-- Max Users -->
+      <div class="form-group">
+        <label for="max-users">Max Users (-1 = unlimited)</label>
+        <input type="text" id="max-users" value="-1">
+      </div>
+
+      <!-- Notes -->
+      <div class="form-group">
+        <label for="notes">Internal Notes</label>
+        <input type="text" id="notes" placeholder="Notes for CRM / logging">
+      </div>
+
+      <button type="button" class="btn-primary" onclick="generateKey()">Generate Activation Key</button>
+    </form>
+
+    <!-- Output Section -->
+    <div id="output-sec" class="output-section">
+      <div class="output-header">Activation Key</div>
+      <div id="key-out" class="key-display" onclick="copyKey()">—</div>
+
+      <div class="output-actions">
+        <button class="btn-secondary" onclick="copyKey()">
+          📋 Copy Key
+        </button>
+        <button class="btn-secondary" onclick="downloadLicenseDat()">
+          💾 Save license.dat
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="status-toast">Toast message</div>
+
+  <script>
+    // Constants
+    const SECRET_SALT = "9Xk#2mPq!7vR$nL4wZ@5jBt8Ue6*Gy3F";
+    let lastGeneratedRecord = null;
+
+    // Helper: show status toast
+    function showToast(message, isSuccess = true) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.style.backgroundColor = isSuccess ? "var(--success)" : "var(--error)";
+      toast.classList.add("show");
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 4000);
+    }
+
+    // Helper: Set expiry relative to current time
+    function setExpiryDays(days) {
+      const field = document.getElementById("expiry-date");
+      if (days === 0) {
+        field.value = "";
+      } else {
+        const d = new Date();
+        d.setDate(d.getDate() + days);
+        field.value = d.toISOString().split('.')[0] + 'Z';
+      }
+    }
+
+    // Crypto: Compute SHA-256 using browser's Web Crypto API
+    async function computeSHA256(text) {
+      const encoder = new TextEncoder();
+      const data = encoder.encode(text);
+      const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+    }
+
+    // Main logic: Generate Key
+    async function generateKey() {
+      const midInput = document.getElementById("machine-id").value.trim().toUpperCase();
+      
+      // Validation
+      if (!midInput) {
+        showToast("Machine ID is required.", false);
+        return;
+      }
+      if (midInput.length !== 8 || !/^[0-9A-F]{8}$/.test(midInput)) {
+        showToast("Machine ID must be exactly 8 hex characters.", false);
+        return;
+      }
+
+      const usersVal = parseInt(document.getElementById("max-users").value.trim());
+      if (isNaN(usersVal)) {
+        showToast("Max Users must be an integer.", false);
+        return;
+      }
+
+      const expVal = document.getElementById("expiry-date").value.trim();
+      if (expVal) {
+        try {
+          Date.parse(expVal);
+        } catch (_) {
+          showToast("Invalid expiry date. Must be ISO standard.", false);
+          return;
+        }
+      }
+
+      try {
+        // Generate activation key: SHA-256(machineId + SECRET_SALT)[:12].toUpperCase()
+        const rawPayload = midInput + SECRET_SALT;
+        const hashHex = await computeSHA256(rawPayload);
+        const activationKey = hashHex.substring(0, 12).toUpperCase();
+
+        // Collect other values
+        const issuedTo = document.getElementById("issued-to").value.trim();
+        const licenseType = document.querySelector('input[name="license-type"]:checked').value;
+        
+        const features = [];
+        document.querySelectorAll('input[name="features"]:checked').forEach(cb => {
+          features.push(cb.value);
+        });
+        if (features.length === 0) features.push("all");
+
+        const notes = document.getElementById("notes").value.trim();
+
+        // Build records
+        lastGeneratedRecord = {
+          version: 1,
+          schema: "pos_license_v1",
+          machine_id: midInput,
+          activation_key: activationKey,
+          license_type: licenseType,
+          features: features,
+          issued_to: issuedTo,
+          max_users: usersVal,
+          activated_at: new Date().toISOString(),
+          expires_at: expVal || null,
+          notes: notes
+        };
+
+        // Render key
+        const keyOut = document.getElementById("key-out");
+        keyOut.textContent = activationKey;
+        
+        // Show output card
+        document.getElementById("output-sec").style.display = "block";
+
+        // Auto copy to clipboard
+        navigator.clipboard.writeText(activationKey).then(() => {
+          showToast("Key generated and copied to clipboard!");
+        }).catch(() => {
+          showToast("Key generated! Click to copy.");
+        });
+
+      } catch (err) {
+        showToast("Error generating key: " + err.message, false);
+      }
+    }
+
+    // Clipboard Copy helper
+    function copyKey() {
+      const keyOut = document.getElementById("key-out");
+      if (keyOut.textContent === "—") return;
+      navigator.clipboard.writeText(keyOut.textContent).then(() => {
+        showToast("Copied key to clipboard!");
+      });
+    }
+
+    // Download license.dat helper
+    function downloadLicenseDat() {
+      if (!lastGeneratedRecord) {
+        showToast("Generate a key first.", false);
+        return;
+      }
+      try {
+        const jsonStr = JSON.stringify(lastGeneratedRecord, null, 2);
+        const blob = new Blob([jsonStr], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "license.dat";
+        document.body.appendChild(link);
+        link.click();
+        
+        // Cleanup
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+        
+        showToast("license.dat downloaded successfully!");
+      } catch (err) {
+        showToast("Error downloading file: " + err.message, false);
+      }
+    }
+  </script>
+</body>
+</html>

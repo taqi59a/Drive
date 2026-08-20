@@ -1,0 +1,44 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#e8e8e8"/>
+  <!-- Road -->
+  <rect x="0" y="130" width="300" height="50" fill="#777"/>
+  <line x1="0" y1="155" x2="300" y2="155" stroke="white" stroke-width="2" stroke-dasharray="20,10"/>
+  <!-- Tram tracks -->
+  <line x1="0" y1="138" x2="300" y2="138" stroke="#999" stroke-width="3"/>
+  <line x1="0" y1="148" x2="300" y2="148" stroke="#999" stroke-width="3"/>
+  <!-- Tram -->
+  <rect x="30" y="80" width="100" height="55" rx="5" fill="#e8a020"/>
+  <rect x="35" y="85" width="20" height="18" rx="2" fill="#aaddff"/>
+  <rect x="60" y="85" width="20" height="18" rx="2" fill="#aaddff"/>
+  <rect x="85" y="85" width="20" height="18" rx="2" fill="#aaddff"/>
+  <rect x="110" y="85" width="15" height="18" rx="2" fill="#aaddff"/>
+  <rect x="32" y="108" width="96" height="4" fill="#c07010"/>
+  <circle cx="50" cy="138" r="7" fill="#333"/>
+  <circle cx="110" cy="138" r="7" fill="#333"/>
+  <!-- TRAM label -->
+  <text x="80" y="78" text-anchor="middle" font-family="Arial" font-size="10" fill="#c07010" font-weight="bold">TRAM</text>
+  <!-- Pedestrians -->
+  <g transform="translate(150,100)">
+    <circle cx="0" cy="0" r="6" fill="#333"/>
+    <line x1="0" y1="6" x2="0" y2="22" stroke="#333" stroke-width="3"/>
+    <line x1="-7" y1="12" x2="7" y2="12" stroke="#333" stroke-width="2"/>
+    <line x1="0" y1="22" x2="-5" y2="35" stroke="#333" stroke-width="2"/>
+    <line x1="0" y1="22" x2="5" y2="35" stroke="#333" stroke-width="2"/>
+  </g>
+  <g transform="translate(168,105)">
+    <circle cx="0" cy="0" r="5" fill="#555"/>
+    <line x1="0" y1="5" x2="0" y2="20" stroke="#555" stroke-width="3"/>
+    <line x1="-6" y1="10" x2="6" y2="10" stroke="#555" stroke-width="2"/>
+    <line x1="0" y1="20" x2="-4" y2="32" stroke="#555" stroke-width="2"/>
+    <line x1="0" y1="20" x2="4" y2="32" stroke="#555" stroke-width="2"/>
+  </g>
+  <!-- Car behind -->
+  <g transform="translate(215,135)">
+    <rect x="0" y="-18" width="60" height="26" rx="4" fill="#2255aa"/>
+    <rect x="8" y="-26" width="38" height="14" rx="3" fill="#3377cc"/>
+    <circle cx="10" cy="10" r="6" fill="#222"/>
+    <circle cx="50" cy="10" r="6" fill="#222"/>
+    <rect x="-4" y="-10" width="6" height="5" fill="#ff4444"/>
+  </g>
+  <text x="150" y="192" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Arrêt de tram</text>
+</svg>

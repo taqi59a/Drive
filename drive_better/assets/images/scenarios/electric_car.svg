@@ -1,0 +1,33 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f0fff4"/>
+  <!-- Road -->
+  <rect x="0" y="148" width="300" height="35" fill="#777"/>
+  <line x1="0" y1="165" x2="300" y2="165" stroke="white" stroke-width="2" stroke-dasharray="15,10"/>
+  <!-- Car body -->
+  <rect x="40" y="100" width="180" height="52" rx="10" fill="#2ecc71"/>
+  <!-- Cabin -->
+  <path d="M75,100 Q90,68 120,62 L180,62 Q210,68 225,100 Z" fill="#27ae60"/>
+  <!-- Windows -->
+  <rect x="85" y="68" width="50" height="28" rx="5" fill="#a8d8f0"/>
+  <rect x="142" y="68" width="50" height="28" rx="5" fill="#a8d8f0"/>
+  <!-- Door line -->
+  <line x1="137" y1="100" x2="137" y2="152" stroke="#27ae60" stroke-width="2"/>
+  <!-- Wheels -->
+  <circle cx="88" cy="155" r="22" fill="#222"/>
+  <circle cx="88" cy="155" r="10" fill="#555"/>
+  <circle cx="88" cy="155" r="4" fill="#888"/>
+  <circle cx="202" cy="155" r="22" fill="#222"/>
+  <circle cx="202" cy="155" r="10" fill="#555"/>
+  <circle cx="202" cy="155" r="4" fill="#888"/>
+  <!-- Headlight -->
+  <rect x="40" y="112" width="14" height="10" rx="3" fill="#a8d8f0"/>
+  <!-- Charging port indicator -->
+  <rect x="218" y="110" width="8" height="14" rx="2" fill="#f39c12"/>
+  <!-- Lightning bolt (electric) -->
+  <polygon points="155,20 142,52 152,52 138,82 162,44 150,44" fill="#f39c12" stroke="#e67e22" stroke-width="1"/>
+  <!-- Green leaf -->
+  <path d="M200,22 Q220,10 228,28 Q218,45 200,38 Q195,32 200,22 Z" fill="#27ae60"/>
+  <path d="M200,22 Q210,30 215,38" fill="none" stroke="#1e8449" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- ZERO EMISSIONS text -->
+  <text x="150" y="190" text-anchor="middle" font-family="Arial" font-size="11" fill="#27ae60" font-weight="bold">ELECTRIC VEHICLE — ZERO EMISSIONS</text>
+</svg>

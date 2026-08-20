@@ -1,0 +1,26 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="300" height="200" fill="#E8EAF6"/>
+  <!-- Car seat -->
+  <rect x="90" y="50" width="120" height="130" rx="12" fill="#78909C" stroke="#546E7A" stroke-width="3"/>
+  <!-- Seat back cushion -->
+  <rect x="100" y="55" width="100" height="90" rx="8" fill="#90A4AE"/>
+  <!-- Seat base -->
+  <rect x="100" y="148" width="100" height="28" rx="6" fill="#90A4AE"/>
+  <!-- Human torso -->
+  <!-- Head -->
+  <circle cx="150" cy="85" r="20" fill="#FFCCBC" stroke="#FFAB91" stroke-width="2"/>
+  <!-- Body -->
+  <rect x="128" y="105" width="44" height="55" rx="8" fill="#5C6BC0"/>
+  <!-- Arms suggestion -->
+  <line x1="128" y1="115" x2="110" y2="135" stroke="#5C6BC0" stroke-width="8" stroke-linecap="round"/>
+  <line x1="172" y1="115" x2="190" y2="135" stroke="#5C6BC0" stroke-width="8" stroke-linecap="round"/>
+  <!-- Seatbelt diagonal -->
+  <line x1="115" y1="72" x2="168" y2="158" stroke="#F9A825" stroke-width="8" stroke-linecap="round"/>
+  <!-- Seatbelt lap -->
+  <line x1="128" y1="158" x2="172" y2="158" stroke="#F9A825" stroke-width="8" stroke-linecap="round"/>
+  <!-- Buckle -->
+  <rect x="160" y="152" width="16" height="12" rx="3" fill="#FF6F00" stroke="#E65100" stroke-width="1.5"/>
+  <!-- Shoulder anchor point -->
+  <circle cx="115" cy="72" r="6" fill="#E65100"/>
+</svg>

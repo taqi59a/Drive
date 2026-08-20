@@ -1,0 +1,36 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Road -->
+  <rect x="0" y="0" width="300" height="200" fill="#bbb"/>
+  <rect x="20" y="0" width="260" height="200" fill="#555"/>
+  <!-- Lane dividers -->
+  <line x1="107" y1="0" x2="107" y2="200" stroke="white" stroke-width="2" stroke-dasharray="16,10"/>
+  <line x1="193" y1="0" x2="193" y2="200" stroke="white" stroke-width="2" stroke-dasharray="16,10"/>
+  <!-- X marks on lanes 1 and 2 -->
+  <line x1="48" y1="80" x2="80" y2="112" stroke="#E53935" stroke-width="6" stroke-linecap="round"/>
+  <line x1="80" y1="80" x2="48" y2="112" stroke="#E53935" stroke-width="6" stroke-linecap="round"/>
+  <line x1="132" y1="80" x2="164" y2="112" stroke="#E53935" stroke-width="6" stroke-linecap="round"/>
+  <line x1="164" y1="80" x2="132" y2="112" stroke="#E53935" stroke-width="6" stroke-linecap="round"/>
+  <!-- Truck top-down in right lane -->
+  <g transform="translate(219,100)">
+    <!-- Cab -->
+    <rect x="-18" y="-38" width="36" height="30" rx="5" fill="#EF6C00" stroke="#E65100" stroke-width="2"/>
+    <rect x="-12" y="-34" width="24" height="18" rx="3" fill="#FFF9C4"/>
+    <!-- Trailer -->
+    <rect x="-18" y="-8" width="36" height="60" rx="4" fill="#78909C" stroke="#546E7A" stroke-width="2"/>
+    <!-- Wheels cab -->
+    <rect x="-24" y="-34" width="8" height="12" rx="2" fill="#222"/>
+    <rect x="16" y="-34" width="8" height="12" rx="2" fill="#222"/>
+    <!-- Wheels trailer -->
+    <rect x="-24" y="5" width="8" height="12" rx="2" fill="#222"/>
+    <rect x="16" y="5" width="8" height="12" rx="2" fill="#222"/>
+    <rect x="-24" y="30" width="8" height="12" rx="2" fill="#222"/>
+    <rect x="16" y="30" width="8" height="12" rx="2" fill="#222"/>
+  </g>
+  <!-- Arrow to right lane -->
+  <path d="M170 160 L200 160" stroke="#4CAF50" stroke-width="4" fill="none" marker-end="url(#ga)"/>
+  <defs>
+    <marker id="ga" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L0,9 L9,4.5 Z" fill="#4CAF50"/>
+    </marker>
+  </defs>
+</svg>

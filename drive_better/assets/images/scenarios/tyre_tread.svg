@@ -1,0 +1,21 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tyre outer -->
+  <ellipse cx="150" cy="100" rx="85" ry="85" fill="#222" stroke="#111" stroke-width="3"/>
+  <!-- Tyre inner rim -->
+  <ellipse cx="150" cy="100" rx="55" ry="55" fill="#888" stroke="#666" stroke-width="2"/>
+  <!-- Hub -->
+  <ellipse cx="150" cy="100" rx="22" ry="22" fill="#aaa" stroke="#777" stroke-width="2"/>
+  <!-- Tread grooves -->
+  <path d="M80 80 Q90 100 80 120" stroke="#555" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M90 68 Q105 100 90 132" stroke="#555" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M210 80 Q200 100 210 120" stroke="#555" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M200 68 Q185 100 200 132" stroke="#555" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Depth measurement bracket -->
+  <line x1="95" y1="60" x2="95" y2="140" stroke="#FFD700" stroke-width="2"/>
+  <line x1="95" y1="100" x2="115" y2="100" stroke="#FFD700" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="91" y1="60" x2="99" y2="60" stroke="#FFD700" stroke-width="2"/>
+  <line x1="91" y1="140" x2="99" y2="140" stroke="#FFD700" stroke-width="2"/>
+  <!-- Label -->
+  <rect x="100" y="88" width="68" height="24" rx="4" fill="white" opacity="0.9"/>
+  <text x="134" y="104" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#E53935">1.6mm min</text>
+</svg>

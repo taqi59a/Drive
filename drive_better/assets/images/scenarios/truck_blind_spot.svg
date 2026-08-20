@@ -1,0 +1,44 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#4a7c59"/>
+  <!-- Road -->
+  <rect x="0" y="30" width="300" height="155" fill="#777"/>
+  <line x1="0" y1="107" x2="300" y2="107" stroke="white" stroke-width="2" stroke-dasharray="18,10"/>
+  <!-- Truck top-down -->
+  <g transform="translate(90,45)">
+    <!-- Trailer -->
+    <rect x="-30" y="0" width="60" height="110" rx="4" fill="#cc6600"/>
+    <!-- Cab -->
+    <rect x="-28" y="-30" width="56" height="36" rx="5" fill="#dd7700"/>
+    <!-- Cab windscreen -->
+    <rect x="-20" y="-26" width="40" height="20" rx="3" fill="#aaddff" opacity="0.7"/>
+    <!-- Wheels -->
+    <rect x="-38" y="10" width="10" height="18" rx="2" fill="#222"/>
+    <rect x="28" y="10" width="10" height="18" rx="2" fill="#222"/>
+    <rect x="-38" y="80" width="10" height="18" rx="2" fill="#222"/>
+    <rect x="28" y="80" width="10" height="18" rx="2" fill="#222"/>
+    <rect x="-38" y="-22" width="10" height="14" rx="2" fill="#222"/>
+    <rect x="28" y="-22" width="10" height="14" rx="2" fill="#222"/>
+  </g>
+  <!-- Blind spot zones (shaded) -->
+  <!-- Front blind spot -->
+  <polygon points="60,15 120,15 90,35" fill="#ff4444" opacity="0.35"/>
+  <!-- Right blind spot (large) -->
+  <polygon points="120,45 280,30 280,100 120,85" fill="#ff4444" opacity="0.35"/>
+  <!-- Left blind spot -->
+  <polygon points="60,45 10,55 10,100 60,85" fill="#ff4444" opacity="0.35"/>
+  <!-- Rear blind spot -->
+  <polygon points="60,155 120,155 120,185 60,185" fill="#ff4444" opacity="0.35"/>
+  <!-- Small car in right blind spot -->
+  <g transform="translate(195,50)">
+    <rect x="-18" y="-9" width="36" height="18" rx="3" fill="#2255aa"/>
+    <rect x="-12" y="-15" width="24" height="10" rx="2" fill="#3377cc"/>
+    <circle cx="-11" cy="10" r="4" fill="#222"/>
+    <circle cx="11" cy="10" r="4" fill="#222"/>
+    <!-- Warning ring -->
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#ff2222" stroke-width="2.5" stroke-dasharray="6,4"/>
+  </g>
+  <!-- Legend -->
+  <rect x="8" y="168" width="12" height="10" rx="2" fill="#ff4444" opacity="0.6"/>
+  <text x="25" y="178" font-family="Arial" font-size="9" fill="white">Zone aveugle</text>
+  <text x="150" y="196" text-anchor="middle" font-family="Arial" font-size="11" fill="white">Angles morts du camion</text>
+</svg>

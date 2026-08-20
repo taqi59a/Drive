@@ -1,0 +1,34 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#e8f0f8"/>
+  <!-- Document -->
+  <rect x="60" y="15" width="180" height="165" rx="8" fill="white" stroke="#aabbcc" stroke-width="2"/>
+  <!-- Dog-ear -->
+  <polygon points="210,15 240,15 240,45" fill="#ddeeff" stroke="#aabbcc" stroke-width="1.5"/>
+  <!-- Document title -->
+  <rect x="75" y="25" width="150" height="20" rx="3" fill="#2255aa"/>
+  <text x="150" y="40" text-anchor="middle" font-family="Arial" font-size="10" fill="white" font-weight="bold">CONSTAT AMIABLE</text>
+  <!-- EU circle of stars -->
+  <circle cx="150" cy="90" r="35" fill="#003399" stroke="#002266" stroke-width="2"/>
+  <!-- 12 stars in circle -->
+  <g fill="#FFD700">
+    <polygon points="150,58 152,64 158,64 153,68 155,74 150,70 145,74 147,68 142,64 148,64" transform="rotate(0,150,90)"/>
+    <polygon points="150,58 152,64 158,64 153,68 155,74 150,70 145,74 147,68 142,64 148,64" transform="rotate(30,150,90)"/>
+    <polygon points="150,58 152,64 158,64 153,68 155,74 150,70 145,74 147,68 142,64 148,64" transform="rotate(60,150,90)"/>
+    <polygon points="150,58 152,64 158,64 153,68 155,74 150,70 145,74 147,68 142,64 148,64" transform="rotate(90,150,90)"/>
+    <polygon points="150,58 152,64 158,64 153,68 155,74 150,70 145,74 147,68 142,64 148,64" transform="rotate(120,150,90)"/>
+    <polygon points="150,58 152,64 158,64 153,68 155,74 150,70 145,74 147,68 142,64 148,64" transform="rotate(150,150,90)"/>
+    <polygon points="150,58 152,64 158,64 153,68 155,74 150,70 145,74 147,68 142,64 148,64" transform="rotate(180,150,90)"/>
+    <polygon points="150,58 152,64 158,64 153,68 155,74 150,70 145,74 147,68 142,64 148,64" transform="rotate(210,150,90)"/>
+    <polygon points="150,58 152,64 158,64 153,68 155,74 150,70 145,74 147,68 142,64 148,64" transform="rotate(240,150,90)"/>
+    <polygon points="150,58 152,64 158,64 153,68 155,74 150,70 145,74 147,68 142,64 148,64" transform="rotate(270,150,90)"/>
+    <polygon points="150,58 152,64 158,64 153,68 155,74 150,70 145,74 147,68 142,64 148,64" transform="rotate(300,150,90)"/>
+    <polygon points="150,58 152,64 158,64 153,68 155,74 150,70 145,74 147,68 142,64 148,64" transform="rotate(330,150,90)"/>
+  </g>
+  <!-- Form lines below -->
+  <line x1="80" y1="138" x2="220" y2="138" stroke="#aabbcc" stroke-width="1.5"/>
+  <line x1="80" y1="150" x2="220" y2="150" stroke="#aabbcc" stroke-width="1.5"/>
+  <line x1="80" y1="162" x2="220" y2="162" stroke="#aabbcc" stroke-width="1.5"/>
+  <!-- Signature scribble -->
+  <path d="M85,148 Q95,143 105,148 Q115,153 125,148" stroke="#333" stroke-width="1.5" fill="none"/>
+  <text x="150" y="195" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">Constat amiable</text>
+</svg>

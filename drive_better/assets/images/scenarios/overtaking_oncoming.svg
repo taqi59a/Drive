@@ -1,0 +1,54 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Road -->
+  <rect x="0" y="0" width="300" height="200" fill="#bbb"/>
+  <rect x="30" y="0" width="240" height="200" fill="#555"/>
+  <!-- Lane markings -->
+  <line x1="150" y1="0" x2="150" y2="200" stroke="white" stroke-width="2" stroke-dasharray="15,10"/>
+  <!-- Main car (overtaking, left lane) -->
+  <g transform="translate(55,110)">
+    <rect x="0" y="-25" width="36" height="52" rx="7" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+    <rect x="4" y="-17" width="28" height="14" rx="3" fill="#B3E5FC"/>
+    <rect x="4" y="12" width="28" height="12" rx="3" fill="#B3E5FC"/>
+    <rect x="-5" y="-14" width="7" height="11" rx="2" fill="#222"/>
+    <rect x="34" y="-14" width="7" height="11" rx="2" fill="#222"/>
+    <rect x="-5" y="13" width="7" height="11" rx="2" fill="#222"/>
+    <rect x="34" y="13" width="7" height="11" rx="2" fill="#222"/>
+  </g>
+  <!-- Overtaking arrow -->
+  <path d="M73 80 L73 60" stroke="#FFD700" stroke-width="3" fill="none" marker-end="url(#ya)"/>
+  <!-- Cyclist ahead (right lane) -->
+  <g transform="translate(158,60)">
+    <!-- Bike wheels -->
+    <circle cx="8" cy="18" r="9" fill="none" stroke="#333" stroke-width="2.5"/>
+    <circle cx="30" cy="18" r="9" fill="none" stroke="#333" stroke-width="2.5"/>
+    <!-- Frame -->
+    <line x1="8" y1="18" x2="19" y2="8" stroke="#333" stroke-width="2"/>
+    <line x1="19" y1="8" x2="30" y2="18" stroke="#333" stroke-width="2"/>
+    <line x1="19" y1="8" x2="14" y2="18" stroke="#333" stroke-width="2"/>
+    <!-- Rider -->
+    <circle cx="19" cy="0" r="7" fill="#666"/>
+    <line x1="19" y1="7" x2="19" y2="8" stroke="#666" stroke-width="3"/>
+    <line x1="19" y1="8" x2="10" y2="12" stroke="#666" stroke-width="2"/>
+    <line x1="19" y1="8" x2="28" y2="12" stroke="#666" stroke-width="2"/>
+  </g>
+  <!-- Oncoming car (right lane, coming down) -->
+  <g transform="translate(158,130) rotate(180,18,0)">
+    <rect x="0" y="-25" width="36" height="52" rx="7" fill="#E53935" stroke="#B71C1C" stroke-width="2"/>
+    <rect x="4" y="-17" width="28" height="14" rx="3" fill="#FFCDD2"/>
+    <rect x="4" y="12" width="28" height="12" rx="3" fill="#FFCDD2"/>
+    <rect x="-5" y="-14" width="7" height="11" rx="2" fill="#222"/>
+    <rect x="34" y="-14" width="7" height="11" rx="2" fill="#222"/>
+    <rect x="-5" y="13" width="7" height="11" rx="2" fill="#222"/>
+    <rect x="34" y="13" width="7" height="11" rx="2" fill="#222"/>
+  </g>
+  <!-- Oncoming arrow -->
+  <path d="M176 175 L176 195" stroke="#E53935" stroke-width="3" fill="none" marker-end="url(#ra)"/>
+  <defs>
+    <marker id="ya" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,8 L4,0 L8,8 Z" fill="#FFD700"/>
+    </marker>
+    <marker id="ra" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 Z" fill="#E53935"/>
+    </marker>
+  </defs>
+</svg>

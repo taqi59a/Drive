@@ -1,0 +1,7 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- White background triangle -->
+  <polygon points="100,15 190,175 10,175" fill="white" stroke="#CC0000" stroke-width="8" stroke-linejoin="round"/>
+  <!-- Black exclamation mark -->
+  <rect x="93" y="75" width="14" height="60" rx="5" fill="#1a1a1a"/>
+  <circle cx="100" cy="155" r="9" fill="#1a1a1a"/>
+</svg>

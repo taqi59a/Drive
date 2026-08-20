@@ -1,0 +1,35 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="300" height="200" fill="#E8F5E9"/>
+  <!-- Card -->
+  <rect x="30" y="35" width="240" height="130" rx="12" fill="white" stroke="#4CAF50" stroke-width="3"/>
+  <!-- Green header band -->
+  <rect x="30" y="35" width="240" height="45" rx="12" fill="#2E7D32"/>
+  <rect x="30" y="58" width="240" height="22" fill="#2E7D32"/>
+  <!-- EU stars circle -->
+  <g transform="translate(62,57)">
+    <circle cx="0" cy="-12" r="3" fill="#FFD700"/>
+    <circle cx="8.5" cy="-8.5" r="3" fill="#FFD700"/>
+    <circle cx="12" cy="0" r="3" fill="#FFD700"/>
+    <circle cx="8.5" cy="8.5" r="3" fill="#FFD700"/>
+    <circle cx="0" cy="12" r="3" fill="#FFD700"/>
+    <circle cx="-8.5" cy="8.5" r="3" fill="#FFD700"/>
+    <circle cx="-12" cy="0" r="3" fill="#FFD700"/>
+    <circle cx="-8.5" cy="-8.5" r="3" fill="#FFD700"/>
+  </g>
+  <!-- Card title -->
+  <text x="150" y="62" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="white">CERTIFICATE OF INSURANCE</text>
+  <!-- Green stripe on left -->
+  <rect x="30" y="80" width="12" height="85" rx="0" fill="#4CAF50"/>
+  <!-- Card fields -->
+  <text x="58" y="100" font-family="Arial" font-size="10" fill="#555">Policy No:</text>
+  <line x1="58" y1="103" x2="240" y2="103" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="58" y="122" font-family="Arial" font-size="10" fill="#555">Insured:</text>
+  <line x1="58" y1="125" x2="240" y2="125" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="58" y="144" font-family="Arial" font-size="10" fill="#555">Vehicle Reg:</text>
+  <line x1="58" y1="147" x2="240" y2="147" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="58" y="163" font-family="Arial" font-size="10" fill="#555">Valid until:</text>
+  <!-- Green/white EU flag colours accent -->
+  <rect x="200" y="148" width="60" height="18" rx="4" fill="#4CAF50"/>
+  <text x="230" y="161" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="white">VALID</text>
+</svg>

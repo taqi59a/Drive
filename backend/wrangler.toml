@@ -1,0 +1,14 @@
+name = "drive-better-proxy"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# Non-secret config vars go here.
+# Secrets are set via: wrangler secret put ANTHROPIC_API_KEY
+#                      wrangler secret put APP_TOKEN
+
+# [[routes]]
+# Uncomment and set your custom domain after deploying:
+# pattern = "api.drivebetter.app/*"
+# zone_name = "drivebetter.app"

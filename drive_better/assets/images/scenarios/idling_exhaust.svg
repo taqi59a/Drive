@@ -1,0 +1,32 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f0f4f8"/>
+  <!-- Road -->
+  <rect x="0" y="140" width="300" height="40" fill="#777"/>
+  <!-- Car side view -->
+  <rect x="30" y="95" width="160" height="50" rx="8" fill="#3a7bd5"/>
+  <rect x="55" y="70" width="100" height="38" rx="10" fill="#3a7bd5"/>
+  <!-- Windows -->
+  <rect x="62" y="75" width="38" height="28" rx="4" fill="#a8d8f0"/>
+  <rect x="106" y="75" width="38" height="28" rx="4" fill="#a8d8f0"/>
+  <!-- Wheel arches -->
+  <circle cx="75" cy="148" r="20" fill="#222"/>
+  <circle cx="75" cy="148" r="9" fill="#888"/>
+  <circle cx="160" cy="148" r="20" fill="#222"/>
+  <circle cx="160" cy="148" r="9" fill="#888"/>
+  <!-- Headlight -->
+  <rect x="30" y="105" width="12" height="10" rx="3" fill="#f1c40f"/>
+  <!-- Exhaust pipe -->
+  <rect x="185" y="133" width="22" height="7" rx="3" fill="#555"/>
+  <!-- Smoke puffs from exhaust -->
+  <circle cx="220" cy="128" r="10" fill="#aaa" opacity="0.7"/>
+  <circle cx="235" cy="118" r="12" fill="#999" opacity="0.6"/>
+  <circle cx="252" cy="106" r="14" fill="#bbb" opacity="0.5"/>
+  <circle cx="268" cy="92" r="10" fill="#ccc" opacity="0.4"/>
+  <circle cx="244" cy="122" r="8" fill="#aaa" opacity="0.4"/>
+  <!-- Engine running indicator -->
+  <text x="100" y="122" text-anchor="middle" font-family="Arial" font-size="9" fill="white" opacity="0.8">ENGINE ON</text>
+  <!-- Red X overlay -->
+  <circle cx="240" cy="110" r="48" fill="none" stroke="#e74c3c" stroke-width="5"/>
+  <line x1="206" y1="76" x2="274" y2="144" stroke="#e74c3c" stroke-width="5"/>
+  <text x="150" y="180" text-anchor="middle" font-family="Arial" font-size="11" fill="#e74c3c" font-weight="bold">NO UNNECESSARY IDLING</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="200" fill="#4a7c59"/>
+  <!-- Horizontal road -->
+  <rect x="0" y="80" width="300" height="40" fill="#555"/>
+  <!-- Vertical road from top-right -->
+  <rect x="200" y="0" width="40" height="80" fill="#555"/>
+  <!-- Road markings horizontal -->
+  <line x1="0" y1="100" x2="190" y2="100" stroke="white" stroke-width="2" stroke-dasharray="20,10"/>
+  <!-- Road markings vertical -->
+  <line x1="220" y1="0" x2="220" y2="80" stroke="white" stroke-width="2" stroke-dasharray="20,10"/>
+  <!-- Car on horizontal road (going right) -->
+  <g transform="translate(60,88)">
+    <rect x="0" y="0" width="36" height="18" rx="4" fill="#2255aa"/>
+    <rect x="6" y="-5" width="22" height="10" rx="2" fill="#3377cc"/>
+    <circle cx="6" cy="18" r="4" fill="#222"/>
+    <circle cx="28" cy="18" r="4" fill="#222"/>
+    <rect x="32" y="3" width="5" height="4" fill="yellow" opacity="0.9"/>
+  </g>
+  <!-- Car on vertical road (going down) -->
+  <g transform="translate(207,20) rotate(90)">
+    <rect x="0" y="0" width="36" height="18" rx="4" fill="#cc3322"/>
+    <rect x="6" y="-5" width="22" height="10" rx="2" fill="#ee4433"/>
+    <circle cx="6" cy="18" r="4" fill="#222"/>
+    <circle cx="28" cy="18" r="4" fill="#222"/>
+    <rect x="32" y="3" width="5" height="4" fill="yellow" opacity="0.9"/>
+  </g>
+  <!-- Priority arrow pointing right (from right road) -->
+  <g transform="translate(185,100)">
+    <polygon points="-15,-8 -15,8 5,8 5,15 20,0 5,-15 5,-8" fill="#FFD700" stroke="#aa8800" stroke-width="1.5"/>
+  </g>
+  <!-- Label -->
+  <text x="150" y="170" text-anchor="middle" font-family="Arial" font-size="13" fill="white" font-weight="bold">Priorité à droite</text>
+</svg>

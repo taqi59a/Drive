@@ -1,0 +1,35 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#4a7c59"/>
+  <!-- Road -->
+  <rect x="0" y="70" width="300" height="80" fill="#777"/>
+  <!-- Zebra crossing stripes -->
+  <rect x="130" y="70" width="18" height="80" fill="white" opacity="0.9"/>
+  <rect x="154" y="70" width="18" height="80" fill="white" opacity="0.9"/>
+  <rect x="178" y="70" width="18" height="80" fill="white" opacity="0.9"/>
+  <!-- Road markings -->
+  <line x1="0" y1="110" x2="125" y2="110" stroke="white" stroke-width="2" stroke-dasharray="18,10"/>
+  <line x1="202" y1="110" x2="300" y2="110" stroke="white" stroke-width="2" stroke-dasharray="18,10"/>
+  <!-- Stopped car -->
+  <g transform="translate(28,80)">
+    <rect x="0" y="0" width="80" height="34" rx="5" fill="#2255aa"/>
+    <rect x="10" y="-10" width="52" height="20" rx="4" fill="#3377cc"/>
+    <circle cx="14" cy="36" r="8" fill="#222"/>
+    <circle cx="64" cy="36" r="8" fill="#222"/>
+    <rect x="77" y="8" width="8" height="6" fill="#ffffaa"/>
+    <!-- Brake lights -->
+    <rect x="-4" y="8" width="6" height="6" fill="#ff4444"/>
+  </g>
+  <!-- Pedestrian on crossing -->
+  <g transform="translate(155,55)">
+    <!-- Body -->
+    <circle cx="0" cy="0" r="9" fill="#f5c88a"/>
+    <rect x="-6" y="9" width="12" height="20" rx="4" fill="#cc3322"/>
+    <!-- Arms -->
+    <line x1="-6" y1="15" x2="-16" y2="25" stroke="#f5c88a" stroke-width="4" stroke-linecap="round"/>
+    <line x1="6" y1="15" x2="16" y2="25" stroke="#f5c88a" stroke-width="4" stroke-linecap="round"/>
+    <!-- Legs -->
+    <line x1="-3" y1="29" x2="-6" y2="45" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+    <line x1="3" y1="29" x2="8" y2="45" stroke="#333" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="150" y="192" text-anchor="middle" font-family="Arial" font-size="12" fill="white">Passage piéton</text>
+</svg>

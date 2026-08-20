@@ -1,0 +1,38 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#4a7c59"/>
+  <!-- Roads -->
+  <rect x="120" y="0" width="60" height="200" fill="#777"/>
+  <rect x="0" y="80" width="300" height="60" fill="#777"/>
+  <!-- Center markings -->
+  <line x1="150" y1="0" x2="150" y2="75" stroke="white" stroke-width="2" stroke-dasharray="14,8"/>
+  <line x1="150" y1="145" x2="150" y2="200" stroke="white" stroke-width="2" stroke-dasharray="14,8"/>
+  <line x1="0" y1="110" x2="115" y2="110" stroke="white" stroke-width="2" stroke-dasharray="14,8"/>
+  <line x1="185" y1="110" x2="300" y2="110" stroke="white" stroke-width="2" stroke-dasharray="14,8"/>
+  <!-- Priority arrows from right -->
+  <!-- Right arrow (from right side of junction) -->
+  <g transform="translate(235,110)">
+    <polygon points="-30,-8 -30,8 -10,8 -10,16 10,0 -10,-16 -10,-8" fill="#FFD700" stroke="#aa8800" stroke-width="1.5"/>
+  </g>
+  <!-- Down arrow (from top) -->
+  <g transform="translate(150,35)">
+    <polygon points="-8,-10 8,-10 8,10 16,10 0,30 -16,10 -8,10" fill="#FFD700" stroke="#aa8800" stroke-width="1.5"/>
+  </g>
+  <!-- Cars -->
+  <!-- Car coming from left -->
+  <g transform="translate(20,88)">
+    <rect x="0" y="0" width="50" height="24" rx="4" fill="#2255aa"/>
+    <rect x="6" y="-7" width="32" height="14" rx="3" fill="#3377cc"/>
+    <circle cx="8" cy="26" r="5" fill="#222"/>
+    <circle cx="40" cy="26" r="5" fill="#222"/>
+    <rect x="47" y="6" width="6" height="5" fill="#ffffaa"/>
+  </g>
+  <!-- Car coming from top (has priority) -->
+  <g transform="translate(128,15) rotate(0)">
+    <rect x="0" y="0" width="24" height="50" rx="4" fill="#cc3322"/>
+    <rect x="-7" y="6" width="14" height="32" rx="3" fill="#ee4433"/>
+    <circle cx="-6" cy="8" r="5" fill="#222"/>
+    <circle cx="-6" cy="40" r="5" fill="#222"/>
+    <rect x="6" y="47" width="5" height="6" fill="#ffffaa"/>
+  </g>
+  <text x="150" y="192" text-anchor="middle" font-family="Arial" font-size="11" fill="white">Priorité à droite (carrefour)</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#4a7c59"/>
+  <!-- Motorway - 3 lanes -->
+  <rect x="0" y="30" width="300" height="140" fill="#777"/>
+  <line x1="0" y1="77" x2="300" y2="77" stroke="white" stroke-width="1.5" stroke-dasharray="18,8"/>
+  <line x1="0" y1="123" x2="300" y2="123" stroke="white" stroke-width="1.5" stroke-dasharray="18,8"/>
+  <line x1="0" y1="30" x2="300" y2="30" stroke="white" stroke-width="2.5"/>
+  <line x1="0" y1="170" x2="300" y2="170" stroke="white" stroke-width="2.5"/>
+  <!-- Left lane cars (moved to far left) -->
+  <g transform="translate(18,38)">
+    <rect x="0" y="0" width="44" height="22" rx="3" fill="#2255aa"/>
+    <rect x="6" y="-6" width="28" height="12" rx="2" fill="#3377cc"/>
+    <circle cx="7" cy="24" r="5" fill="#222"/>
+    <circle cx="35" cy="24" r="5" fill="#222"/>
+  </g>
+  <g transform="translate(80,38)">
+    <rect x="0" y="0" width="44" height="22" rx="3" fill="#2255aa"/>
+    <rect x="6" y="-6" width="28" height="12" rx="2" fill="#3377cc"/>
+    <circle cx="7" cy="24" r="5" fill="#222"/>
+    <circle cx="35" cy="24" r="5" fill="#222"/>
+  </g>
+  <g transform="translate(150,38)">
+    <rect x="0" y="0" width="44" height="22" rx="3" fill="#2255aa"/>
+    <rect x="6" y="-6" width="28" height="12" rx="2" fill="#3377cc"/>
+    <circle cx="7" cy="24" r="5" fill="#222"/>
+    <circle cx="35" cy="24" r="5" fill="#222"/>
+  </g>
+  <!-- Right lane cars (moved to far right) -->
+  <g transform="translate(18,130)">
+    <rect x="0" y="0" width="44" height="22" rx="3" fill="#cc3322"/>
+    <rect x="6" y="-6" width="28" height="12" rx="2" fill="#ee4433"/>
+    <circle cx="7" cy="24" r="5" fill="#222"/>
+    <circle cx="35" cy="24" r="5" fill="#222"/>
+  </g>
+  <g transform="translate(80,130)">
+    <rect x="0" y="0" width="44" height="22" rx="3" fill="#cc3322"/>
+    <rect x="6" y="-6" width="28" height="12" rx="2" fill="#ee4433"/>
+    <circle cx="7" cy="24" r="5" fill="#222"/>
+    <circle cx="35" cy="24" r="5" fill="#222"/>
+  </g>
+  <g transform="translate(150,130)">
+    <rect x="0" y="0" width="44" height="22" rx="3" fill="#cc3322"/>
+    <rect x="6" y="-6" width="28" height="12" rx="2" fill="#ee4433"/>
+    <circle cx="7" cy="24" r="5" fill="#222"/>
+    <circle cx="35" cy="24" r="5" fill="#222"/>
+  </g>
+  <!-- Emergency gap arrows -->
+  <line x1="240" y1="78" x2="240" y2="122" stroke="#FFD700" stroke-width="2" stroke-dasharray="4,3"/>
+  <!-- Ambulance in gap -->
+  <g transform="translate(238,88)">
+    <rect x="-18" y="0" width="36" height="24" rx="3" fill="white" stroke="#cc0000" stroke-width="2"/>
+    <text x="0" y="17" text-anchor="middle" font-family="Arial" font-size="14" fill="#cc0000" font-weight="bold">+</text>
+    <rect x="-18" y="-6" width="8" height="8" rx="1" fill="#cc0000" opacity="0.8"/>
+    <circle cx="-10" cy="26" r="4" fill="#333"/>
+    <circle cx="10" cy="26" r="4" fill="#333"/>
+    <!-- Siren -->
+    <rect x="-6" y="-8" width="12" height="5" rx="2" fill="#3355ff"/>
+  </g>
+  <text x="150" y="194" text-anchor="middle" font-family="Arial" font-size="11" fill="white">Couloir d'urgence</text>
+</svg>

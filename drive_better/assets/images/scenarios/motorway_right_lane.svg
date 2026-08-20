@@ -1,0 +1,34 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Road background -->
+  <rect x="0" y="0" width="300" height="200" fill="#bbb"/>
+  <rect x="20" y="0" width="260" height="200" fill="#555"/>
+  <!-- 3 lane dividers -->
+  <line x1="107" y1="0" x2="107" y2="200" stroke="white" stroke-width="2" stroke-dasharray="16,10"/>
+  <line x1="193" y1="0" x2="193" y2="200" stroke="white" stroke-width="2" stroke-dasharray="16,10"/>
+  <!-- Lane labels -->
+  <text x="63" y="30" text-anchor="middle" font-family="Arial" font-size="11" fill="#aaa">Lane 1</text>
+  <text x="150" y="30" text-anchor="middle" font-family="Arial" font-size="11" fill="#aaa">Lane 2</text>
+  <text x="237" y="30" text-anchor="middle" font-family="Arial" font-size="11" fill="#aaa">Lane 3</text>
+  <!-- X marks on left two lanes -->
+  <line x1="48" y1="85" x2="78" y2="115" stroke="#E53935" stroke-width="5" stroke-linecap="round"/>
+  <line x1="78" y1="85" x2="48" y2="115" stroke="#E53935" stroke-width="5" stroke-linecap="round"/>
+  <line x1="135" y1="85" x2="165" y2="115" stroke="#E53935" stroke-width="5" stroke-linecap="round"/>
+  <line x1="165" y1="85" x2="135" y2="115" stroke="#E53935" stroke-width="5" stroke-linecap="round"/>
+  <!-- Arrow pointing to right lane -->
+  <path d="M193 100 L237 100" stroke="#4CAF50" stroke-width="5" fill="none" marker-end="url(#ga)"/>
+  <defs>
+    <marker id="ga" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto">
+      <path d="M0,0 L0,9 L9,4.5 Z" fill="#4CAF50"/>
+    </marker>
+  </defs>
+  <!-- Car in right lane -->
+  <g transform="translate(219,120)">
+    <rect x="-18" y="-26" width="36" height="52" rx="7" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+    <rect x="-12" y="-18" width="24" height="14" rx="3" fill="#B3E5FC"/>
+    <rect x="-12" y="10" width="24" height="12" rx="3" fill="#B3E5FC"/>
+    <rect x="-23" y="-14" width="7" height="11" rx="2" fill="#222"/>
+    <rect x="16" y="-14" width="7" height="11" rx="2" fill="#222"/>
+    <rect x="-23" y="12" width="7" height="11" rx="2" fill="#222"/>
+    <rect x="16" y="12" width="7" height="11" rx="2" fill="#222"/>
+  </g>
+</svg>

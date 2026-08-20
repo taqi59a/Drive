@@ -1,0 +1,31 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#1a1a2e"/>
+  <!-- 3-lane motorway top-down -->
+  <rect x="0" y="0" width="300" height="200" fill="#555"/>
+  <line x1="100" y1="0" x2="100" y2="200" stroke="white" stroke-width="2" stroke-dasharray="20,15"/>
+  <line x1="200" y1="0" x2="200" y2="200" stroke="white" stroke-width="2" stroke-dasharray="20,15"/>
+  <!-- Car in left lane going straight -->
+  <g transform="translate(35,120)">
+    <rect x="0" y="0" width="30" height="50" rx="5" fill="#3498db" stroke="#2980b9" stroke-width="1.5"/>
+    <rect x="4" y="4" width="22" height="15" rx="2" fill="#aad4f0"/>
+    <circle cx="8" cy="53" r="6" fill="#222"/>
+    <circle cx="22" cy="53" r="6" fill="#222"/>
+    <circle cx="8" cy="-3" r="6" fill="#222"/>
+    <circle cx="22" cy="-3" r="6" fill="#222"/>
+  </g>
+  <!-- Car attempting right-overtake in right lane -->
+  <g transform="translate(235,70)">
+    <rect x="0" y="0" width="30" height="50" rx="5" fill="#e74c3c" stroke="#c0392b" stroke-width="1.5"/>
+    <rect x="4" y="4" width="22" height="15" rx="2" fill="#ffaaaa"/>
+    <circle cx="8" cy="53" r="6" fill="#222"/>
+    <circle cx="22" cy="53" r="6" fill="#222"/>
+    <circle cx="8" cy="-3" r="6" fill="#222"/>
+    <circle cx="22" cy="-3" r="6" fill="#222"/>
+  </g>
+  <!-- Large red X over right lane -->
+  <line x1="205" y1="20" x2="295" y2="180" stroke="#e74c3c" stroke-width="12" stroke-linecap="round"/>
+  <line x1="295" y1="20" x2="205" y2="180" stroke="#e74c3c" stroke-width="12" stroke-linecap="round"/>
+  <!-- Label -->
+  <rect x="5" y="165" width="175" height="28" rx="4" fill="rgba(0,0,0,0.6)"/>
+  <text x="92" y="184" font-family="Arial" font-size="11" font-weight="bold" fill="white" text-anchor="middle">NO OVERTAKING ON THE RIGHT</text>
+</svg>

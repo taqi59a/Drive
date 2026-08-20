@@ -1,0 +1,5 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="88" fill="#0055A4"/>
+  <!-- Upward arrow -->
+  <polygon points="100,30 140,90 115,90 115,160 85,160 85,90 60,90" fill="white"/>
+</svg>

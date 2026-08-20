@@ -1,0 +1,30 @@
+# Flutter and Dart build artifacts
+drive_better/.dart_tool/
+drive_better/build/
+drive_better/.flutter-plugins
+drive_better/.flutter-plugins-dependencies
+drive_better/.metadata
+drive_better/pubspec.lock
+
+# Node.js backend
+backend/node_modules/
+backend/.wrangler/
+backend/dist/
+
+# System / IDE files
+.DS_Store
+.idea/
+.vscode/
+*.iml
+
+# PDF Book and CSV seed sheets (large and temporary files)
+Driving Theory Book 2022.pdf
+drive_better_questions_sheet.csv
+
+# Local database and zip archives
+default.isar
+*.zip
+
+# Agent tools
+.antigravity/
+.claude/

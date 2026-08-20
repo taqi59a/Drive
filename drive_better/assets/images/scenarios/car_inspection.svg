@@ -1,0 +1,41 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="300" height="200" fill="#F5F5F5"/>
+  <!-- Car silhouette side view -->
+  <g transform="translate(20,85)">
+    <!-- Body -->
+    <rect x="10" y="20" width="160" height="55" rx="8" fill="#607D8B" stroke="#455A64" stroke-width="2"/>
+    <!-- Roof -->
+    <path d="M40,20 Q55,0 100,0 Q140,0 150,20 Z" fill="#546E7A" stroke="#455A64" stroke-width="2"/>
+    <!-- Windows -->
+    <path d="M50,18 Q58,4 80,4 Q100,4 105,18 Z" fill="#B3E5FC"/>
+    <path d="M108,18 Q112,4 130,4 Q145,4 148,18 Z" fill="#B3E5FC"/>
+    <!-- Wheels -->
+    <circle cx="38" cy="78" r="18" fill="#333" stroke="#111" stroke-width="2"/>
+    <circle cx="38" cy="78" r="7" fill="#888"/>
+    <circle cx="140" cy="78" r="18" fill="#333" stroke="#111" stroke-width="2"/>
+    <circle cx="140" cy="78" r="7" fill="#888"/>
+    <!-- Headlight -->
+    <ellipse cx="172" cy="42" rx="8" ry="6" fill="#FFF9C4" stroke="#F9A825" stroke-width="1.5"/>
+  </g>
+  <!-- Clipboard -->
+  <g transform="translate(215,30)">
+    <rect x="0" y="8" width="62" height="78" rx="5" fill="white" stroke="#78909C" stroke-width="2"/>
+    <rect x="18" y="0" width="26" height="14" rx="4" fill="#78909C"/>
+    <!-- Checklist lines -->
+    <line x1="22" y1="28" x2="52" y2="28" stroke="#90A4AE" stroke-width="2"/>
+    <line x1="22" y1="40" x2="52" y2="40" stroke="#90A4AE" stroke-width="2"/>
+    <line x1="22" y1="52" x2="52" y2="52" stroke="#90A4AE" stroke-width="2"/>
+    <line x1="22" y1="64" x2="52" y2="64" stroke="#90A4AE" stroke-width="2"/>
+    <!-- Checkmarks -->
+    <polyline points="10,26 14,31 20,22" fill="none" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="10,38 14,43 20,34" fill="none" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="10,50 14,55 20,46" fill="none" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- X mark last item -->
+    <line x1="10" y1="60" x2="18" y2="68" stroke="#E53935" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="18" y1="60" x2="10" y2="68" stroke="#E53935" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <!-- CTI text badge -->
+  <rect x="218" y="120" width="56" height="28" rx="6" fill="#1565C0"/>
+  <text x="246" y="139" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="white">CTI</text>
+</svg>

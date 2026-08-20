@@ -1,0 +1,47 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky/ground -->
+  <rect x="0" y="0" width="300" height="200" fill="#E3F2FD"/>
+  <rect x="0" y="150" width="300" height="50" fill="#78909C"/>
+  <!-- Road marking -->
+  <line x1="0" y1="150" x2="300" y2="150" stroke="#ddd" stroke-width="2"/>
+  <!-- Bus body -->
+  <rect x="30" y="90" width="180" height="60" rx="8" fill="#FDD835" stroke="#F9A825" stroke-width="3"/>
+  <!-- Bus front -->
+  <rect x="210" y="95" width="30" height="50" rx="6" fill="#FBC02D" stroke="#F9A825" stroke-width="2"/>
+  <!-- Windscreen -->
+  <rect x="214" y="100" width="22" height="22" rx="3" fill="#B3E5FC" stroke="#90CAF9" stroke-width="1.5"/>
+  <!-- Windows on bus -->
+  <rect x="50" y="97" width="28" height="22" rx="3" fill="#B3E5FC" stroke="#90CAF9" stroke-width="1.5"/>
+  <rect x="90" y="97" width="28" height="22" rx="3" fill="#B3E5FC" stroke="#90CAF9" stroke-width="1.5"/>
+  <rect x="130" y="97" width="28" height="22" rx="3" fill="#B3E5FC" stroke="#90CAF9" stroke-width="1.5"/>
+  <rect x="170" y="97" width="28" height="22" rx="3" fill="#B3E5FC" stroke="#90CAF9" stroke-width="1.5"/>
+  <!-- Bus door -->
+  <rect x="45" y="118" width="20" height="32" rx="3" fill="#F9A825" stroke="#E65100" stroke-width="1.5"/>
+  <!-- Wheels -->
+  <circle cx="75" cy="152" r="14" fill="#333" stroke="#111" stroke-width="2"/>
+  <circle cx="75" cy="152" r="6" fill="#888"/>
+  <circle cx="195" cy="152" r="14" fill="#333" stroke="#111" stroke-width="2"/>
+  <circle cx="195" cy="152" r="6" fill="#888"/>
+  <!-- Flashing lights -->
+  <circle cx="35" cy="95" r="7" fill="#E53935" stroke="#B71C1C" stroke-width="1.5"/>
+  <circle cx="35" cy="143" r="7" fill="#FF6F00" stroke="#E65100" stroke-width="1.5"/>
+  <!-- SCHOOL text -->
+  <text x="140" y="140" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#333">SCHOOL BUS</text>
+  <!-- Child figures crossing -->
+  <g transform="translate(250,100)">
+    <circle cx="0" cy="0" r="8" fill="#FF8A65"/>
+    <line x1="0" y1="8" x2="0" y2="30" stroke="#5C6BC0" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="16" x2="-10" y2="24" stroke="#5C6BC0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="16" x2="10" y2="24" stroke="#5C6BC0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="30" x2="-8" y2="45" stroke="#5C6BC0" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="30" x2="8" y2="45" stroke="#5C6BC0" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(270,105)">
+    <circle cx="0" cy="0" r="7" fill="#FF8A65"/>
+    <line x1="0" y1="7" x2="0" y2="27" stroke="#EF5350" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="0" y1="14" x2="-9" y2="22" stroke="#EF5350" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="14" x2="9" y2="22" stroke="#EF5350" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="27" x2="-7" y2="40" stroke="#EF5350" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="27" x2="7" y2="40" stroke="#EF5350" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

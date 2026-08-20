@@ -1,0 +1,16 @@
+name = "drive-better-proxy"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# Set these as secrets via: wrangler secret put ANTHROPIC_API_KEY
+# and: wrangler secret put APP_TOKEN
+
+# To deploy:
+# 1. npm install -g wrangler
+# 2. wrangler login
+# 3. wrangler secret put ANTHROPIC_API_KEY   (paste your key)
+# 4. wrangler secret put APP_TOKEN           (create a random token)
+# 5. wrangler deploy
+# 6. Copy the worker URL to --dart-define=PROXY_BASE_URL=https://...

@@ -1,0 +1,44 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#1a1a2e"/>
+  <!-- Road -->
+  <rect x="0" y="130" width="300" height="50" fill="#555"/>
+  <line x1="0" y1="155" x2="300" y2="155" stroke="white" stroke-width="2" stroke-dasharray="20,15"/>
+  <!-- Traffic light 1 -->
+  <rect x="30" y="50" width="20" height="60" rx="4" fill="#333" stroke="#555" stroke-width="2"/>
+  <circle cx="40" cy="65" r="7" fill="#111"/>
+  <circle cx="40" cy="80" r="7" fill="#111"/>
+  <circle cx="40" cy="95" r="7" fill="#2ecc71" filter="url(#glow)"/>
+  <defs><filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <line x1="40" y1="110" x2="40" y2="130" stroke="#555" stroke-width="4"/>
+  <!-- Traffic light 2 -->
+  <rect x="130" y="50" width="20" height="60" rx="4" fill="#333" stroke="#555" stroke-width="2"/>
+  <circle cx="140" cy="65" r="7" fill="#111"/>
+  <circle cx="140" cy="80" r="7" fill="#111"/>
+  <circle cx="140" cy="95" r="7" fill="#2ecc71" filter="url(#glow)"/>
+  <line x1="140" y1="110" x2="140" y2="130" stroke="#555" stroke-width="4"/>
+  <!-- Traffic light 3 -->
+  <rect x="230" y="50" width="20" height="60" rx="4" fill="#333" stroke="#555" stroke-width="2"/>
+  <circle cx="240" cy="65" r="7" fill="#111"/>
+  <circle cx="240" cy="80" r="7" fill="#111"/>
+  <circle cx="240" cy="95" r="7" fill="#2ecc71" filter="url(#glow)"/>
+  <line x1="240" y1="110" x2="240" y2="130" stroke="#555" stroke-width="4"/>
+  <!-- Car -->
+  <g transform="translate(60,138)">
+    <rect x="0" y="0" width="55" height="22" rx="5" fill="#e74c3c" stroke="#c0392b" stroke-width="1.5"/>
+    <path d="M12,0 Q18,-14 40,-14 L46,0 Z" fill="#e74c3c" stroke="#c0392b" stroke-width="1.5"/>
+    <rect x="14" y="-12" width="14" height="11" rx="2" fill="#aad4f0"/>
+    <rect x="30" y="-12" width="12" height="11" rx="2" fill="#aad4f0"/>
+    <circle cx="13" cy="22" r="7" fill="#222"/>
+    <circle cx="42" cy="22" r="7" fill="#222"/>
+    <circle cx="13" cy="22" r="3" fill="#888"/>
+    <circle cx="42" cy="22" r="3" fill="#888"/>
+  </g>
+  <!-- Green wave arrow -->
+  <path d="M70,40 Q140,20 210,40" stroke="#2ecc71" stroke-width="3" fill="none" stroke-dasharray="8,4" marker-end="url(#arrowG)"/>
+  <defs>
+    <marker id="arrowG" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2ecc71"/>
+    </marker>
+  </defs>
+  <text x="150" y="190" font-family="Arial" font-size="12" font-weight="bold" fill="#2ecc71" text-anchor="middle">GREEN WAVE — SPEED SYNCHRONISATION</text>
+</svg>

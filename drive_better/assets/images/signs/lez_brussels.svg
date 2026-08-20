@@ -1,0 +1,14 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="200" fill="#e8f0f7"/>
+  <!-- Stylised Brussels city outline (approximate polygon) -->
+  <polygon points="
+    80,20 95,18 115,22 130,28 148,35 158,48 165,62 168,78
+    165,95 160,108 155,120 148,132 138,145 125,155 112,162
+    100,168 88,165 75,158 62,148 52,135 45,120 40,105
+    38,90 40,75 45,60 55,47 65,35 72,26"
+    fill="#003DA5" stroke="#001f6b" stroke-width="2"/>
+  <!-- LEZ badge overlay -->
+  <rect x="55" y="78" width="90" height="44" rx="6" fill="white" opacity="0.95"/>
+  <text x="100" y="110" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" fill="#003DA5" text-anchor="middle">LEZ</text>
+</svg>

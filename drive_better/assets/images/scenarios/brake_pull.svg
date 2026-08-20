@@ -1,0 +1,28 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Road -->
+  <rect x="0" y="0" width="300" height="200" fill="#c8c8c8"/>
+  <rect x="80" y="0" width="140" height="200" fill="#555"/>
+  <line x1="150" y1="0" x2="150" y2="200" stroke="white" stroke-width="3" stroke-dasharray="18,12"/>
+  <!-- Squiggly drift path -->
+  <path d="M150 170 C130 150, 170 130, 150 110 C130 90, 170 70, 155 50" stroke="#FFD700" stroke-width="3" stroke-dasharray="8,5" fill="none" stroke-linecap="round"/>
+  <!-- Top-down car body -->
+  <g transform="translate(130,120)">
+    <rect x="0" y="0" width="40" height="64" rx="8" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+    <!-- Windscreen -->
+    <rect x="5" y="8" width="30" height="18" rx="3" fill="#B3E5FC"/>
+    <!-- Rear window -->
+    <rect x="5" y="40" width="30" height="14" rx="3" fill="#B3E5FC"/>
+    <!-- Wheels -->
+    <rect x="-5" y="8" width="8" height="14" rx="2" fill="#222"/>
+    <rect x="37" y="8" width="8" height="14" rx="2" fill="#222"/>
+    <rect x="-5" y="42" width="8" height="14" rx="2" fill="#222"/>
+    <rect x="37" y="42" width="8" height="14" rx="2" fill="#222"/>
+  </g>
+  <!-- Drift arrow -->
+  <path d="M165 130 Q185 110 175 90" stroke="#E53935" stroke-width="3" fill="none" stroke-linecap="round" marker-end="url(#arrowR)"/>
+  <defs>
+    <marker id="arrowR" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L8,4 Z" fill="#E53935"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,32 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#1a1a1a"/>
+  <text x="150" y="16" text-anchor="middle" font-family="Arial" font-size="11" fill="#f39c12" font-weight="bold">FUEL LEAK — NO SMOKING / NAKED FLAME</text>
+  <!-- Fuel drop -->
+  <path d="M80,40 Q60,70 60,90 Q60,115 80,115 Q100,115 100,90 Q100,70 80,40 Z" fill="#3498db" opacity="0.9"/>
+  <ellipse cx="80" cy="112" rx="14" ry="5" fill="#2980b9" opacity="0.5"/>
+  <!-- Fuel drop shine -->
+  <path d="M72,60 Q68,72 68,82" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <!-- Flame symbol -->
+  <path d="M170,120 Q155,95 165,75 Q160,85 150,80 Q165,60 170,40 Q175,60 185,55 Q175,70 182,85 Q192,65 188,45 Q205,65 200,90 Q208,80 205,95 Q212,85 210,105 Q205,115 190,125 Q178,130 170,120 Z" fill="#e74c3c"/>
+  <path d="M170,115 Q160,100 165,85 Q168,93 173,88 Q172,98 178,100 Q183,92 180,80 Q190,88 186,100 Q192,93 190,108 Q185,118 176,122 Q172,120 170,115 Z" fill="#f39c12"/>
+  <path d="M172,115 Q168,105 171,97 Q173,104 176,100 Q178,108 175,114 Q174,116 172,115 Z" fill="#f1c40f"/>
+  <!-- Plus sign between -->
+  <text x="133" y="92" text-anchor="middle" font-family="Arial" font-size="28" font-weight="bold" fill="#aaa">=</text>
+  <text x="133" y="125" text-anchor="middle" font-family="Arial" font-size="11" fill="#aaa">FIRE RISK</text>
+  <!-- Cigarette with red X -->
+  <g transform="translate(210,60)">
+    <!-- Cigarette body -->
+    <rect x="-30" y="-5" width="55" height="10" rx="5" fill="#f5f5dc"/>
+    <rect x="20" y="-5" width="10" height="10" rx="3" fill="#f39c12" opacity="0.6"/>
+    <!-- Filter -->
+    <rect x="-30" y="-5" width="15" height="10" rx="3" fill="#c8a96e"/>
+    <!-- Smoke -->
+    <path d="M30,-5 Q35,-15 32,-22" fill="none" stroke="#aaa" stroke-width="2" stroke-linecap="round"/>
+    <path d="M25,-5 Q28,-18 24,-25" fill="none" stroke="#aaa" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <!-- Red X over cigarette -->
+  <circle cx="210" cy="60" r="38" fill="none" stroke="#e74c3c" stroke-width="5"/>
+  <line x1="177" y1="27" x2="243" y2="93" stroke="#e74c3c" stroke-width="5"/>
+  <text x="150" y="168" text-anchor="middle" font-family="Arial" font-size="10" fill="#e74c3c">No smoking · No open flames · No sparks</text>
+  <text x="150" y="183" text-anchor="middle" font-family="Arial" font-size="10" fill="#f39c12">Switch off engine · Move away · Call 112</text>
+</svg>

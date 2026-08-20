@@ -1,0 +1,32 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#2a2a3a"/>
+  <!-- Tunnel walls -->
+  <path d="M20,180 L20,90 Q150,10 280,90 L280,180 Z" fill="#444" stroke="#666" stroke-width="3"/>
+  <!-- Tunnel interior -->
+  <path d="M40,180 L40,98 Q150,30 260,98 L260,180 Z" fill="#1a1a2a"/>
+  <!-- Road inside tunnel -->
+  <rect x="40" y="145" width="220" height="35" fill="#3a3a4a"/>
+  <line x1="40" y1="162" x2="260" y2="162" stroke="#555" stroke-width="2" stroke-dasharray="18,10"/>
+  <!-- Tunnel lights -->
+  <circle cx="80" cy="105" r="5" fill="#ffffcc" opacity="0.9"/>
+  <circle cx="130" cy="75" r="5" fill="#ffffcc" opacity="0.9"/>
+  <circle cx="180" cy="75" r="5" fill="#ffffcc" opacity="0.9"/>
+  <circle cx="230" cy="105" r="5" fill="#ffffcc" opacity="0.9"/>
+  <!-- Light glow -->
+  <circle cx="80" cy="105" r="10" fill="#ffffcc" opacity="0.15"/>
+  <circle cx="230" cy="105" r="10" fill="#ffffcc" opacity="0.15"/>
+  <!-- Car inside tunnel -->
+  <g transform="translate(115,148)">
+    <rect x="0" y="-18" width="60" height="26" rx="4" fill="#2255aa"/>
+    <rect x="8" y="-26" width="38" height="16" rx="3" fill="#3377cc"/>
+    <circle cx="10" cy="10" r="6" fill="#222"/>
+    <circle cx="48" cy="10" r="6" fill="#222"/>
+    <rect x="57" y="-10" width="7" height="5" fill="#ffffaa"/>
+  </g>
+  <!-- No-stop circle with X -->
+  <circle cx="248" cy="40" r="18" fill="white" stroke="#cc0000" stroke-width="3"/>
+  <line x1="236" y1="28" x2="260" y2="52" stroke="#cc0000" stroke-width="4"/>
+  <!-- P symbol (parking) -->
+  <text x="248" y="45" text-anchor="middle" font-family="Arial" font-size="16" fill="#cc0000" font-weight="bold">P</text>
+  <text x="150" y="196" text-anchor="middle" font-family="Arial" font-size="11" fill="#aaa">Règles en tunnel</text>
+</svg>

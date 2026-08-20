@@ -1,0 +1,13 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="90" fill="white" stroke="#CC0000" stroke-width="10"/>
+  <!-- Truck silhouette -->
+  <rect x="40" y="85" width="75" height="40" rx="3" fill="#1a1a1a"/>
+  <rect x="115" y="95" width="38" height="30" rx="3" fill="#1a1a1a"/>
+  <rect x="117" y="97" width="20" height="16" rx="2" fill="white"/>
+  <circle cx="58" cy="128" r="10" fill="#1a1a1a"/>
+  <circle cx="58" cy="128" r="5" fill="white"/>
+  <circle cx="138" cy="128" r="10" fill="#1a1a1a"/>
+  <circle cx="138" cy="128" r="5" fill="white"/>
+  <!-- Red diagonal bar -->
+  <line x1="25" y1="165" x2="175" y2="35" stroke="#CC0000" stroke-width="13" stroke-linecap="round"/>
+</svg>

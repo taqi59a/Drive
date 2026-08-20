@@ -1,0 +1,23 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="300" height="200" fill="#E8F5E9"/>
+  <!-- Green sign rectangle -->
+  <rect x="30" y="50" width="240" height="100" rx="10" fill="#2E7D32" stroke="#1B5E20" stroke-width="4"/>
+  <!-- White border inner -->
+  <rect x="38" y="58" width="224" height="84" rx="7" fill="none" stroke="white" stroke-width="2.5"/>
+  <!-- GRATUIT text -->
+  <text x="150" y="108" text-anchor="middle" font-family="Arial" font-size="28" font-weight="bold" fill="white">GRATUIT</text>
+  <!-- GRATIS subtext -->
+  <text x="150" y="132" text-anchor="middle" font-family="Arial" font-size="16" fill="#A5D6A7">GRATIS</text>
+  <!-- EU stars top left of sign -->
+  <g transform="translate(58,80)">
+    <circle cx="0" cy="-10" r="2.5" fill="#FFD700"/>
+    <circle cx="7" cy="-7" r="2.5" fill="#FFD700"/>
+    <circle cx="9" cy="0" r="2.5" fill="#FFD700"/>
+    <circle cx="7" cy="7" r="2.5" fill="#FFD700"/>
+    <circle cx="0" cy="10" r="2.5" fill="#FFD700"/>
+    <circle cx="-7" cy="7" r="2.5" fill="#FFD700"/>
+    <circle cx="-9" cy="0" r="2.5" fill="#FFD700"/>
+    <circle cx="-7" cy="-7" r="2.5" fill="#FFD700"/>
+  </g>
+</svg>

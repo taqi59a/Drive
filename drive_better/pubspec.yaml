@@ -1,0 +1,85 @@
+name: drive_better
+description: Master the Belgian driving theory test with AI-powered learning.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: '>=3.22.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # State management (manual providers, no codegen conflict)
+  flutter_riverpod: ^2.5.1
+
+  # Navigation
+  go_router: ^14.3.0
+
+  # Networking
+  dio: ^5.7.0
+
+  # Local DB
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+  path_provider: ^2.1.5
+  shared_preferences: ^2.3.3
+
+  # AI / ML - OCR
+  google_mlkit_text_recognition: ^0.13.0
+
+  # Camera & images
+  camera: ^0.10.5+9
+  image_picker: ^1.1.2
+  cached_network_image: ^3.4.1
+  image: ^4.2.0
+
+  # UI / animation / design
+  flutter_animate: ^4.5.2
+  lottie: ^3.1.3
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.16
+  shimmer: ^3.0.0
+  fl_chart: ^0.68.0
+  flutter_widget_from_html: ^0.15.2
+
+  # Utils
+  collection: ^1.18.0
+  intl: ^0.20.2
+  string_similarity: ^2.1.1
+  logger: ^2.5.0
+  permission_handler: ^11.3.1
+
+dependency_overrides:
+  isar_flutter_libs:
+    path: patches/isar_flutter_libs
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.12
+  isar_generator: ^3.1.0+1
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/seed/
+    - assets/images/
+    - assets/images/signs/
+    - assets/images/scenarios/
+    - assets/images/questions/
+    - assets/images/theory/
+    - assets/icons/
+    - assets/lottie/

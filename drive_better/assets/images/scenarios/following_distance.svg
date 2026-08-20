@@ -1,0 +1,31 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#e8e8e8"/>
+  <!-- Road -->
+  <rect x="0" y="90" width="300" height="60" fill="#777"/>
+  <line x1="0" y1="120" x2="300" y2="120" stroke="white" stroke-width="2" stroke-dasharray="20,10"/>
+  <!-- Front car -->
+  <g transform="translate(195,98)">
+    <rect x="0" y="0" width="70" height="30" rx="4" fill="#cc3322"/>
+    <rect x="8" y="-8" width="46" height="16" rx="3" fill="#ee4433"/>
+    <circle cx="12" cy="32" r="7" fill="#222"/>
+    <circle cx="56" cy="32" r="7" fill="#222"/>
+    <rect x="-4" y="8" width="6" height="6" fill="#ff6644"/>
+  </g>
+  <!-- Rear car -->
+  <g transform="translate(30,98)">
+    <rect x="0" y="0" width="70" height="30" rx="4" fill="#2255aa"/>
+    <rect x="8" y="-8" width="46" height="16" rx="3" fill="#3377cc"/>
+    <circle cx="12" cy="32" r="7" fill="#222"/>
+    <circle cx="56" cy="32" r="7" fill="#222"/>
+    <rect x="66" y="8" width="6" height="6" fill="#ffff88" opacity="0.9"/>
+  </g>
+  <!-- Gap arrow -->
+  <line x1="104" y1="113" x2="193" y2="113" stroke="#FFD700" stroke-width="3"/>
+  <polygon points="104,113 114,108 114,118" fill="#FFD700"/>
+  <polygon points="193,113 183,108 183,118" fill="#FFD700"/>
+  <!-- 2 sec label -->
+  <rect x="128" y="100" width="44" height="22" rx="4" fill="white" stroke="#FFD700" stroke-width="2"/>
+  <text x="150" y="116" text-anchor="middle" font-family="Arial" font-size="13" fill="#333" font-weight="bold">2 sec</text>
+  <!-- Label -->
+  <text x="150" y="175" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Distance de sécurité</text>
+</svg>

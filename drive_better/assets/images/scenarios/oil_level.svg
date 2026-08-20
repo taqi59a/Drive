@@ -1,0 +1,43 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="300" height="200" fill="#FFF8E1"/>
+  <!-- Oil can -->
+  <g transform="translate(65,100)">
+    <!-- Can body -->
+    <rect x="-30" y="-45" width="60" height="70" rx="6" fill="#78909C" stroke="#546E7A" stroke-width="2"/>
+    <!-- Spout -->
+    <path d="M30,-35 L55,-50 L58,-44 L35,-30" fill="#607D8B" stroke="#455A64" stroke-width="1.5"/>
+    <!-- Handle top -->
+    <path d="M-30,-30 Q-50,-30 -50,-10 Q-50,10 -30,10" fill="none" stroke="#546E7A" stroke-width="5" stroke-linecap="round"/>
+    <!-- Oil level window -->
+    <rect x="-18" y="-30" width="36" height="40" rx="3" fill="#FFF9C4" stroke="#F9A825" stroke-width="1.5"/>
+    <!-- Oil inside (dark) -->
+    <rect x="-18" y="-2" width="36" height="28" rx="3" fill="#5D4037" opacity="0.85"/>
+    <!-- Level line -->
+    <line x1="-22" y1="-2" x2="22" y2="-2" stroke="#F9A825" stroke-width="2" stroke-dasharray="4,3"/>
+    <!-- MIN/MAX labels -->
+    <text x="0" y="-6" text-anchor="middle" font-family="Arial" font-size="7" fill="#F9A825">MAX</text>
+    <text x="0" y="22" text-anchor="middle" font-family="Arial" font-size="7" fill="#aaa">MIN</text>
+  </g>
+  <!-- Dipstick -->
+  <g transform="translate(175,100)">
+    <!-- Stick -->
+    <rect x="-4" y="-75" width="8" height="145" rx="3" fill="#B0BEC5" stroke="#78909C" stroke-width="1.5"/>
+    <!-- Handle loop -->
+    <ellipse cx="0" cy="-75" rx="14" ry="10" fill="none" stroke="#FF6F00" stroke-width="3"/>
+    <text x="0" y="-72" text-anchor="middle" font-family="Arial" font-size="8" fill="#FF6F00">OIL</text>
+    <!-- Max line on dipstick -->
+    <line x1="-10" y1="40" x2="10" y2="40" stroke="#4CAF50" stroke-width="2.5"/>
+    <text x="15" y="44" font-family="Arial" font-size="8" fill="#4CAF50">MAX</text>
+    <!-- Min line -->
+    <line x1="-10" y1="58" x2="10" y2="58" stroke="#E53935" stroke-width="2.5"/>
+    <text x="15" y="62" font-family="Arial" font-size="8" fill="#E53935">MIN</text>
+    <!-- Oil residue mark -->
+    <rect x="-4" y="42" width="8" height="16" rx="2" fill="#5D4037" opacity="0.7"/>
+  </g>
+  <!-- Oil drop icon -->
+  <g transform="translate(240,65)">
+    <path d="M0,-22 Q12,0 12,10 Q12,24 0,24 Q-12,24 -12,10 Q-12,0 0,-22 Z" fill="#5D4037" stroke="#3E2723" stroke-width="1.5"/>
+    <ellipse cx="-4" cy="8" rx="4" ry="6" fill="rgba(255,255,255,0.3)"/>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: blue-green rectangle -->
+  <rect x="5" y="30" width="190" height="140" rx="8" fill="#005F73"/>
+  <!-- White bold LEZ text -->
+  <text x="100" y="105" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="52" fill="white" text-anchor="middle">LEZ</text>
+  <!-- Small white car silhouette -->
+  <rect x="30" y="130" width="48" height="18" rx="3" fill="white"/>
+  <rect x="36" y="120" width="34" height="13" rx="3" fill="white"/>
+  <circle cx="38" cy="150" r="5" fill="#005F73"/>
+  <circle cx="38" cy="150" r="2.5" fill="white"/>
+  <circle cx="70" cy="150" r="5" fill="#005F73"/>
+  <circle cx="70" cy="150" r="2.5" fill="white"/>
+  <!-- Green leaf icon -->
+  <ellipse cx="148" cy="138" rx="16" ry="11" fill="#4CAF50" transform="rotate(-30,148,138)"/>
+  <line x1="148" y1="148" x2="148" y2="158" stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="140" y1="140" x2="148" y2="148" stroke="#4CAF50" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="156" y1="136" x2="148" y2="148" stroke="#4CAF50" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

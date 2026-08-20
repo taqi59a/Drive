@@ -1,0 +1,74 @@
+[
+  {
+    "id": "road_signs",
+    "title": "Road Signs",
+    "description": "Warning, regulatory, and informational signs used on UK roads.",
+    "order": 1,
+    "questionCount": 25,
+    "iconName": "sign_post",
+    "colorHex": "#1B3A6B"
+  },
+  {
+    "id": "hazard_awareness",
+    "title": "Hazard Awareness",
+    "description": "Identify and respond to hazards including pedestrians, cyclists, and junctions.",
+    "order": 2,
+    "questionCount": 25,
+    "iconName": "warning",
+    "colorHex": "#F59E0B"
+  },
+  {
+    "id": "motorway_rules",
+    "title": "Motorway Rules",
+    "description": "Rules for UK motorways: lanes, speed, speed limits, and breakdowns.",
+    "order": 3,
+    "questionCount": 25,
+    "iconName": "directions",
+    "colorHex": "#2D5BB8"
+  },
+  {
+    "id": "vehicle_safety",
+    "title": "Vehicle Safety",
+    "description": "Vehicle checks, maintenance, tyres, brakes, and roadworthiness.",
+    "order": 4,
+    "questionCount": 20,
+    "iconName": "car_repair",
+    "colorHex": "#2EBD85"
+  },
+  {
+    "id": "rules_of_road",
+    "title": "Rules of the Road",
+    "description": "Right of way, speed limits, lane discipline, overtaking, and road markings.",
+    "order": 5,
+    "questionCount": 20,
+    "iconName": "rule",
+    "colorHex": "#7C3AED"
+  },
+  {
+    "id": "road_works",
+    "title": "Road Works",
+    "description": "Driving safely through motorway and street roadworks, temporary signs, and signals.",
+    "order": 6,
+    "questionCount": 15,
+    "iconName": "construction",
+    "colorHex": "#F5A623"
+  },
+  {
+    "id": "accidents",
+    "title": "Accidents & First Aid",
+    "description": "Legal obligations at accident scenes, emergency calls, and basic first-aid procedures.",
+    "order": 7,
+    "questionCount": 15,
+    "iconName": "local_hospital",
+    "colorHex": "#E5484D"
+  },
+  {
+    "id": "environment",
+    "title": "Environment & Eco",
+    "description": "Eco-driving techniques, fuel efficiency, emissions, and low-emission zones.",
+    "order": 8,
+    "questionCount": 15,
+    "iconName": "eco",
+    "colorHex": "#10B981"
+  }
+]

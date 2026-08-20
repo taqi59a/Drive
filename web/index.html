@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prepare for the Belgium Driving Theory Exam with our complete learning and testing system. Practice with the official 15-second per question limit and 5-mark major offences rule.">
+    <title>Drive Better BE - Belgium Driving Theory Exam Preparation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- App Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Access Lock Screen Overlay -->
+    <div id="access-lock-screen" class="lock-screen-overlay">
+        <div class="lock-card" id="lock-card-box">
+            <div class="lock-icon-wrapper">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <h2>Security Verification</h2>
+            <p>Please enter your access code to enter the training platform.</p>
+            
+            <div class="machine-id-container" style="background-color: var(--bg-tertiary); padding: 12px; border-radius: var(--border-radius-sm); border: 1px solid var(--card-border); margin-bottom: 20px; font-family: 'Outfit', sans-serif; font-size: 13px; font-weight: 600; display: flex; flex-direction: column; gap: 4px; align-items: center;">
+                <span style="color: var(--text-tertiary); font-size: 11px; font-weight: 500;">YOUR MACHINE ID</span>
+                <span id="display-machine-id" style="color: var(--primary); font-size: 16px; font-family: monospace; letter-spacing: 1px; font-weight: 700;">--------</span>
+            </div>
+            <p style="font-size: 11px; color: var(--text-tertiary); margin-top: -12px; margin-bottom: 20px;">Send this Machine ID to the administrator to receive your personal Access Code.</p>
+
+            <div class="lock-input-group">
+                <input type="password" id="access-code-input" class="form-control" placeholder="Enter Access Code" autocomplete="off" style="text-align: center; font-size: 16px; letter-spacing: 2px;">
+                <div class="error-msg" id="lock-error-msg" style="display: none; color: var(--danger); text-align: center; margin-top: 10px; font-weight: 500;">Invalid access code. Please try again.</div>
+            </div>
+            <button class="btn btn-primary" id="btn-unlock-app" style="width: 100%; margin-top: 20px;">
+                <i class="fa-solid fa-key"></i> Unlock Platform
+            </button>
+        </div>
+    </div>
+
+    <!-- App Shell -->
+    <div class="app-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="app-sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fa-solid fa-circle-nodes logo-icon"></i>
+                    <span>Drive<strong>Better</strong><span class="country-badge">BE</span></span>
+                </div>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <a href="#home" class="menu-item active" id="nav-home">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#theory" class="menu-item" id="nav-theory">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Theory Lessons</span>
+                </a>
+                <a href="#practice" class="menu-item" id="nav-practice">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Practice Mode</span>
+                </a>
+                <a href="#exam" class="menu-item" id="nav-exam">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <span>Official Mock Exam</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="#legal" class="menu-item" id="nav-legal" style="padding: 8px 16px; margin-bottom: 8px; font-size: 13px;">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>Legal Notice</span>
+                </a>
+                <div class="theme-toggle" id="theme-toggle-btn">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark Mode</span>
+                </div>
+                <div class="app-version">Version 1.0.0</div>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="app-main">
+            <!-- Top Navbar (Mobile menu trigger & stats summary) -->
+            <header class="app-header">
+                <button class="mobile-menu-trigger" id="mobile-menu-trigger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="header-title" id="page-header-title">Dashboard</div>
+                <div class="quick-stats">
+                    <div class="quick-stat-item">
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <span id="quick-score">Best: --</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dynamic Views Container -->
+            <div class="view-content">
+                
+                <!-- 1. HOME VIEW -->
+                <section id="view-home" class="view-section active-view">
+                    <div class="hero-card">
+                        <div class="hero-text">
+                            <h1>Master the Belgium Driving Theory</h1>
+                            <p>Train with real test questions, study the official theory handbook, and test your skills under exact exam conditions including the 15-second time limit and critical 5-mark major offences.</p>
+                            <div class="hero-actions">
+                                <button class="btn btn-primary" onclick="window.location.hash='#exam'">
+                                    <i class="fa-solid fa-play"></i> Start Mock Exam
+                                </button>
+                                <button class="btn btn-secondary" onclick="window.location.hash='#theory'">
+                                    <i class="fa-solid fa-book"></i> Read Theory
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hero-badge">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                    </div>
+
+                    <!-- Statistics Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon icon-blue">
+                                <i class="fa-solid fa-clipboard-question"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="stat-exams-taken">0</h3>
+                                <p>Exams Completed</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon icon-green">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="stat-pass-rate">0%</h3>
+                                <p>Exam Pass Rate</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon icon-yellow">
+                                <i class="fa-solid fa-book-reader"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="stat-chapters-read">0 / 32</h3>
+                                <p>Lessons Studied</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon icon-purple">
+                                <i class="fa-solid fa-fire"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="stat-streak">0</h3>
+                                <p>Day Streak</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exam Rules Info -->
+                    <div class="info-row">
+                        <div class="card rules-card">
+                            <h2><i class="fa-solid fa-triangle-exclamation text-warning"></i> Belgium Exam Rules</h2>
+                            <ul>
+                                <li><strong>50 Questions:</strong> You must answer 50 multiple choice questions.</li>
+                                <li><strong>Passing Limit:</strong> Minimum score required is <strong>41 out of 50</strong>.</li>
+                                <li><strong>15-Second Limit:</strong> You have exactly 15 seconds to answer each question once it is displayed.</li>
+                                <li><strong>Major Offences Penalty:</strong> Wrongly answering a question classified as a "Major Offence" (infraction grave) deducts <strong>5 marks</strong> instead of 1. Making two major mistakes is an automatic fail!</li>
+                            </ul>
+                        </div>
+                        <div class="card recent-activity">
+                            <h2><i class="fa-solid fa-clock-rotate-left text-primary"></i> Recent History</h2>
+                            <div id="recent-list" class="activity-list">
+                                <div class="empty-state">
+                                    <i class="fa-solid fa-history"></i>
+                                    <p>No exams taken yet. Start practicing to see your history here!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. THEORY VIEW -->
+                <section id="view-theory" class="view-section">
+                    <div class="theory-layout">
+                        <!-- Sidebar: Chapter List -->
+                        <div class="theory-sidebar">
+                            <div class="search-box">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="theory-search-input" placeholder="Search lessons...">
+                            </div>
+                            <div class="chapters-list" id="chapters-menu">
+                                <!-- Loaded dynamically -->
+                            </div>
+                        </div>
+                        <!-- Content Panel -->
+                        <div class="theory-content-panel">
+                            <div class="theory-header">
+                                <h1 id="theory-chapter-title">Select a Lesson</h1>
+                                <button class="btn btn-secondary btn-sm" id="btn-practice-this-lesson" style="display: none;">
+                                    <i class="fa-solid fa-graduation-cap"></i> Practice This Lesson
+                                </button>
+                            </div>
+                            <div class="theory-body" id="theory-chapter-body">
+                                <div class="empty-state">
+                                    <i class="fa-solid fa-book-open"></i>
+                                    <p>Select a lesson from the left panel to begin reading the theory book.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. PRACTICE VIEW -->
+                <section id="view-practice" class="view-section">
+                    <div class="practice-intro-card" id="practice-setup-card">
+                        <h2>Practice Mode</h2>
+                        <p>Practice specific topics or take a relaxed mixed practice. In Practice Mode, when you make a mistake, you will see immediate feedback and a direct link to the theory book chapter explaining the concept.</p>
+                        
+                        <div class="setup-form">
+                            <div class="form-group">
+                                <label for="practice-topic-select">Select Lesson Topic:</label>
+                                <select id="practice-topic-select" class="form-control">
+                                    <option value="all">Mixed Practice (All Lessons)</option>
+                                    <!-- Populated dynamically -->
+                                </select>
+                            </div>
+                            <button class="btn btn-primary" id="btn-start-practice">
+                                <i class="fa-solid fa-play"></i> Start Practice Session
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Practice Session Container -->
+                    <div class="question-container-wrapper" id="practice-session-container" style="display: none;">
+                        <div class="question-header">
+                            <div class="question-meta">
+                                <span class="badge badge-info" id="practice-badge-topic">Topic</span>
+                                <span class="badge badge-secondary" id="practice-badge-index">Question 1</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm" id="btn-exit-practice">
+                                <i class="fa-solid fa-xmark"></i> Exit Practice
+                            </button>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-img-container" id="practice-image-wrapper">
+                                <img src="" id="practice-question-image" alt="Question Image">
+                            </div>
+                            <div class="question-text-area">
+                                <h2 id="practice-question-text">Question text goes here?</h2>
+                            </div>
+                            
+                            <!-- Answer Options -->
+                            <div class="answers-grid" id="practice-answers-grid">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Instant Feedback Panel -->
+                        <div class="feedback-panel" id="practice-feedback-panel" style="display: none;">
+                            <div class="feedback-status-row">
+                                <div class="feedback-status-title">
+                                    <i id="feedback-icon" class="fa-solid"></i>
+                                    <span id="feedback-status-text">Correct!</span>
+                                </div>
+                            </div>
+                            <div class="feedback-explanation" id="practice-explanation-text">
+                                Explanation details go here...
+                            </div>
+                            <div class="feedback-actions">
+                                <button class="btn btn-secondary btn-sm" id="btn-feedback-study">
+                                    <i class="fa-solid fa-book-open"></i> Study This Chapter in Theory
+                                </button>
+                                <button class="btn btn-primary" id="btn-practice-next">
+                                    Next Question <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. EXAM VIEW -->
+                <section id="view-exam" class="view-section">
+                    <!-- Exam Intro -->
+                    <div class="exam-intro-card" id="exam-setup-card">
+                        <div class="exam-badge-icon">
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <h2>Official Belgium Mock Exam</h2>
+                        <p>This exam simulates the exact conditions of the official Belgium driving theory test:</p>
+                        <div class="exam-rules-list">
+                            <div class="rule-item">
+                                <i class="fa-solid fa-check text-green"></i>
+                                <span>50 questions selected across the entire syllabus</span>
+                            </div>
+                            <div class="rule-item">
+                                <i class="fa-solid fa-check text-green"></i>
+                                <span>15 seconds limit to answer each question</span>
+                            </div>
+                            <div class="rule-item">
+                                <i class="fa-solid fa-check text-green"></i>
+                                <span>Severe/Major Offences count for -5 points (2 major mistakes = fail)</span>
+                            </div>
+                            <div class="rule-item">
+                                <i class="fa-solid fa-check text-green"></i>
+                                <span>Pass limit: 41 out of 50. All results are hidden until the exam finishes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="setup-form" style="max-width: 340px; margin: 0 auto 24px; text-align: left;">
+                            <div class="form-group">
+                                <label for="exam-timer-select" style="font-weight: 600; font-size: 13px; color: var(--text-secondary); margin-bottom: 6px; display: block;">Question Duration:</label>
+                                <select id="exam-timer-select" class="form-control" style="cursor: pointer;">
+                                    <option value="15" selected>15 Seconds (Default Belgium Test)</option>
+                                    <option value="20">20 Seconds</option>
+                                    <option value="30">30 Seconds</option>
+                                    <option value="45">45 Seconds</option>
+                                    <option value="60">60 Seconds</option>
+                                    <option value="999999">Untimed (Practice Mode style)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-lg" id="btn-start-exam">
+                            Start Exam (50 Questions)
+                        </button>
+                    </div>
+
+                    <!-- Exam Session Container -->
+                    <div class="question-container-wrapper" id="exam-session-container" style="display: none;">
+                        <div class="exam-progress-bar-container">
+                            <div class="exam-progress-bar-fill" id="exam-timer-bar"></div>
+                        </div>
+                        
+                        <div class="question-header">
+                            <div class="question-meta">
+                                <span class="badge badge-danger">Official Test</span>
+                                <span class="badge badge-secondary" id="exam-badge-index">Question 1 / 50</span>
+                            </div>
+                            <div class="exam-timer-text">
+                                <i class="fa-solid fa-clock"></i> <span id="exam-timer-seconds">15</span>s
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-img-container" id="exam-image-wrapper">
+                                <img src="" id="exam-question-image" alt="Question Image">
+                            </div>
+                            <div class="question-text-area">
+                                <h2 id="exam-question-text">Question text?</h2>
+                            </div>
+                            
+                            <!-- Answer Options -->
+                            <div class="answers-grid" id="exam-answers-grid">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exam Results Container -->
+                    <div class="exam-results-container" id="exam-results-container" style="display: none;">
+                        <div class="results-header-card" id="results-banner">
+                            <div class="result-status-icon" id="results-status-icon">
+                                <i class="fa-solid"></i>
+                            </div>
+                            <h2 id="results-score-heading">45 / 50 Points</h2>
+                            <p id="results-status-subheading">Congratulations! You passed the mock exam.</p>
+                            
+                            <div class="results-breakdown-row">
+                                <div class="breakdown-stat">
+                                    <div class="breakdown-stat-num" id="results-total-correct">0</div>
+                                    <div class="breakdown-stat-label">Correct Answers</div>
+                                </div>
+                                <div class="breakdown-stat">
+                                    <div class="breakdown-stat-num text-danger" id="results-total-major-mistakes">0</div>
+                                    <div class="breakdown-stat-label">Major Mistakes (x5 pt)</div>
+                                </div>
+                                <div class="breakdown-stat">
+                                    <div class="breakdown-stat-num text-warning" id="results-total-minor-mistakes">0</div>
+                                    <div class="breakdown-stat-label">Minor Mistakes (x1 pt)</div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-primary" onclick="window.location.hash='#exam'; window.location.reload();">
+                                <i class="fa-solid fa-rotate-right"></i> Take Another Exam
+                            </button>
+                        </div>
+
+                        <h3>Detailed Review</h3>
+                        <p class="review-instructions">Below is the complete list of questions from this test. Review your mistakes to study smarter.</p>
+                        
+                        <div class="results-filter-tabs">
+                            <button class="filter-tab active" id="btn-filter-all">All Questions (<span id="count-all">50</span>)</button>
+                            <button class="filter-tab" id="btn-filter-wrong">Mistakes (<span id="count-wrong">0</span>)</button>
+                            <button class="filter-tab" id="btn-filter-major">Major Offences (<span id="count-major">0</span>)</button>
+                        </div>
+
+                        <div class="results-review-list" id="results-review-list">
+                            <!-- Populated dynamically with each question, user choice, correct answer and explanation -->
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- 5. LEGAL NOTICE & DISCLAIMER VIEW -->
+                <section id="view-legal" class="view-section">
+                    <div class="card" style="line-height: 1.7; padding: 32px; max-width: 800px; margin: 0 auto;">
+                        <h2 style="font-size: 24px; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--card-border); padding-bottom: 12px;">
+                            <i class="fa-solid fa-scale-balanced text-primary"></i> 
+                            Legal Notice & Educational Disclaimer
+                        </h2>
+                        <div style="font-size: 14px; display: flex; flex-direction: column; gap: 16px; color: var(--text-secondary);">
+                            <p><strong>Non-Commercial Educational Platform Notice</strong></p>
+                            <p>This platform is developed, maintained, and operated strictly for non-commercial, personal study, and public road safety training illustration purposes. It serves to help Belgian driving licence category B candidates test their driving theory skills.</p>
+                            
+                            <h3 style="font-size: 16px; color: var(--text-primary); margin-top: 12px;">1. Legal Exemption (EU and Belgian Copyright Laws)</h3>
+                            <p>All traffic codes, handbook content, learning concepts, illustrations, and mock questions are copyrighted properties of their respective owners. Redistribution of these resources on this site is justified under the following statutory exceptions for education, self-study, and illustration:</p>
+                            <ul style="margin-left: 20px; list-style: disc; display: flex; flex-direction: column; gap: 8px;">
+                                <li><strong>Belgian Code of Economic Law (Art. XI.190, 15°):</strong> Authorizes the reproduction and communication of works for non-commercial illustration for teaching or scientific research purposes to the extent justified by the intended non-commercial purpose.</li>
+                                <li><strong>EU InfoSoc Directive (2001/29/EC, Art. 5.3.a):</strong> Allows exceptions or limitations to copyright for the sole purpose of illustration for teaching or scientific research, as long as the source, including the author's name, is indicated, and to the extent justified by the non-commercial purpose.</li>
+                                <li><strong>EU Digital Single Market (DSM) Directive (2019/790, Art. 5):</strong> Reinforces digital exemptions for teaching materials and illustrational self-testing.</li>
+                            </ul>
+                            
+                            <h3 style="font-size: 16px; color: var(--text-primary); margin-top: 12px;">2. Exclusion of Ownership</h3>
+                            <p>The developers and operators of this website explicitly state that they <strong>do not own</strong> or represent the intellectual property of the official road codes, exam questions, or images. All rights are reserved to their respective national or private copyright holders. The service is provided as-is, completely free of charge, with no registration fees or premium codes required.</p>
+                            
+                            <h3 style="font-size: 16px; color: var(--text-primary); margin-top: 12px;">3. Takedown Policy & Inquiries</h3>
+                            <p>This site supports the legitimate rights of copyright holders. If you are the owner of any materials showcased here and believe their digital presentation on this free learning site exceeds the educational illustrations exceptions under Belgian or European law, please contact the website administrator. We will immediately remove or adjust the content as requested.</p>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+    </div>
+
+    <!-- Script imports -->
+    <script src="js/app.js"></script>
+    <script src="js/exam.js"></script>
+</body>
+</html>

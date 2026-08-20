@@ -1,0 +1,41 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f0fff4"/>
+  <!-- Road -->
+  <rect x="0" y="152" width="300" height="32" fill="#777"/>
+  <line x1="0" y1="168" x2="300" y2="168" stroke="white" stroke-width="2" stroke-dasharray="15,10"/>
+  <!-- Car body -->
+  <rect x="30" y="105" width="200" height="50" rx="10" fill="#3a7bd5"/>
+  <!-- Cabin -->
+  <path d="M65,105 Q80,72 108,65 L192,65 Q220,72 235,105 Z" fill="#2980b9"/>
+  <!-- Windows — 3 passengers visible -->
+  <rect x="72" y="71" width="44" height="30" rx="4" fill="#a8d8f0"/>
+  <rect x="122" y="71" width="44" height="30" rx="4" fill="#a8d8f0"/>
+  <rect x="172" y="71" width="44" height="30" rx="4" fill="#a8d8f0"/>
+  <!-- Head silhouettes in windows -->
+  <!-- Driver -->
+  <circle cx="94" cy="80" r="9" fill="#2c3e50"/>
+  <rect x="87" y="88" width="14" height="12" rx="4" fill="#2c3e50"/>
+  <!-- Passenger 1 -->
+  <circle cx="144" cy="80" r="9" fill="#8e44ad"/>
+  <rect x="137" y="88" width="14" height="12" rx="4" fill="#8e44ad"/>
+  <!-- Passenger 2 -->
+  <circle cx="194" cy="80" r="9" fill="#e67e22"/>
+  <rect x="187" y="88" width="14" height="12" rx="4" fill="#e67e22"/>
+  <!-- Wheels -->
+  <circle cx="82" cy="158" r="20" fill="#222"/>
+  <circle cx="82" cy="158" r="9" fill="#555"/>
+  <circle cx="82" cy="158" r="3" fill="#888"/>
+  <circle cx="208" cy="158" r="20" fill="#222"/>
+  <circle cx="208" cy="158" r="9" fill="#555"/>
+  <circle cx="208" cy="158" r="3" fill="#888"/>
+  <!-- Headlight -->
+  <rect x="30" y="116" width="14" height="10" rx="3" fill="#f1c40f"/>
+  <!-- Green leaf -->
+  <path d="M248,20 Q270,8 278,28 Q268,46 248,38 Q242,31 248,20 Z" fill="#27ae60"/>
+  <path d="M248,20 Q258,30 264,38" fill="none" stroke="#1e8449" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- People count badge -->
+  <circle cx="150" cy="30" r="22" fill="#27ae60"/>
+  <text x="150" y="26" text-anchor="middle" font-family="Arial" font-size="11" fill="white">3</text>
+  <text x="150" y="38" text-anchor="middle" font-family="Arial" font-size="8" fill="white">people</text>
+  <text x="150" y="192" text-anchor="middle" font-family="Arial" font-size="11" fill="#27ae60" font-weight="bold">CARPOOLING — SHARE THE RIDE</text>
+</svg>

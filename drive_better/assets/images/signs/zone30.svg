@@ -1,0 +1,5 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="20" width="180" height="160" rx="8" ry="8" fill="white" stroke="#E00" stroke-width="8"/>
+  <text x="100" y="95" font-family="Arial Black, sans-serif" font-size="30" font-weight="900" text-anchor="middle" fill="black">ZONE</text>
+  <text x="100" y="168" font-family="Arial Black, sans-serif" font-size="80" font-weight="900" text-anchor="middle" fill="black">30</text>
+</svg>

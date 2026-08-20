@@ -1,0 +1,36 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f0f8ff"/>
+  <text x="150" y="18" text-anchor="middle" font-family="Arial" font-size="12" fill="#2c3e50" font-weight="bold">RECOVERY POSITION</text>
+  <!-- Ground line -->
+  <line x1="20" y1="155" x2="280" y2="155" stroke="#aaa" stroke-width="2"/>
+  <!-- Person lying on side (recovery position) -->
+  <!-- Body torso -->
+  <ellipse cx="150" cy="145" rx="70" ry="16" fill="#e8c9a0" transform="rotate(-8,150,145)"/>
+  <!-- Head -->
+  <circle cx="225" cy="128" r="18" fill="#f5cba7"/>
+  <!-- Hair -->
+  <path d="M210,116 Q225,108 240,116 Q238,112 225,110 Q212,112 210,116" fill="#8B4513"/>
+  <!-- Neck -->
+  <rect x="215" y="128" width="16" height="10" rx="4" fill="#f5cba7"/>
+  <!-- Top arm (bent forward, supporting) -->
+  <path d="M185,133 Q165,118 148,125" fill="none" stroke="#e8c9a0" stroke-width="12" stroke-linecap="round"/>
+  <!-- Hand top arm -->
+  <circle cx="148" cy="125" r="7" fill="#f5cba7"/>
+  <!-- Bottom arm (behind body) -->
+  <path d="M170,152 Q155,162 140,158" fill="none" stroke="#d4a574" stroke-width="10" stroke-linecap="round"/>
+  <!-- Top leg (bent at knee, forward) -->
+  <path d="M120,140 Q100,130 80,138 Q70,148 75,158" fill="none" stroke="#6c8ebf" stroke-width="14" stroke-linecap="round"/>
+  <!-- Bottom leg (straight behind) -->
+  <path d="M120,152 Q95,155 70,155" fill="none" stroke="#5a7aad" stroke-width="12" stroke-linecap="round"/>
+  <!-- Clothing hints -->
+  <path d="M140,130 Q150,125 165,132 Q170,142 160,148 Q150,152 140,148 Z" fill="#4a90d9" opacity="0.5"/>
+  <!-- Z Z Z indicating unconscious/breathing -->
+  <text x="240" y="100" font-family="Arial" font-size="14" fill="#888">z</text>
+  <text x="252" y="88" font-family="Arial" font-size="16" fill="#aaa">z</text>
+  <text x="266" y="74" font-family="Arial" font-size="18" fill="#ccc">z</text>
+  <!-- Airway open arrow -->
+  <path d="M225,110 Q225,95 230,85" fill="none" stroke="#27ae60" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="225,110 221,100 229,100" fill="#27ae60"/>
+  <text x="235" y="82" font-family="Arial" font-size="9" fill="#27ae60">Airway open</text>
+  <text x="150" y="178" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">Tilt head back · Bend top knee · Monitor breathing</text>
+</svg>

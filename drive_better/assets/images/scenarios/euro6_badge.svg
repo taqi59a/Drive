@@ -1,0 +1,30 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f0f4f8"/>
+  <!-- Outer badge ring -->
+  <circle cx="150" cy="100" r="85" fill="#1a5276" stroke="#154360" stroke-width="4"/>
+  <circle cx="150" cy="100" r="78" fill="none" stroke="#f1c40f" stroke-width="3"/>
+  <circle cx="150" cy="100" r="72" fill="#2980b9"/>
+  <!-- Stars around ring (12 EU-style) -->
+  <g fill="#f1c40f" font-size="11" text-anchor="middle">
+    <text x="150" y="30">★</text>
+    <text x="191" y="42">★</text>
+    <text x="220" y="73">★</text>
+    <text x="228" y="113">★</text>
+    <text x="212" y="152">★</text>
+    <text x="178" y="177">★</text>
+    <text x="140" y="183">★</text>
+    <text x="103" y="174">★</text>
+    <text x="72" y="150">★</text>
+    <text x="57" y="112">★</text>
+    <text x="64" y="72">★</text>
+    <text x="93" y="42">★</text>
+  </g>
+  <!-- Inner white circle -->
+  <circle cx="150" cy="100" r="55" fill="white"/>
+  <!-- EURO text -->
+  <text x="150" y="85" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#1a5276">EURO</text>
+  <!-- 6 large -->
+  <text x="150" y="128" text-anchor="middle" font-family="Arial" font-size="46" font-weight="bold" fill="#e74c3c">6</text>
+  <!-- Bottom label -->
+  <text x="150" y="188" text-anchor="middle" font-family="Arial" font-size="10" fill="#2c3e50">EMISSION STANDARD</text>
+</svg>

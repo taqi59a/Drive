@@ -1,0 +1,44 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f0f4f8"/>
+  <!-- Road -->
+  <rect x="0" y="110" width="300" height="70" fill="#777"/>
+  <line x1="0" y1="145" x2="300" y2="145" stroke="white" stroke-width="2" stroke-dasharray="15,10"/>
+  <rect x="0" y="108" width="300" height="4" fill="#999"/>
+  <!-- Kerb/pavement -->
+  <rect x="0" y="80" width="300" height="30" fill="#bbb"/>
+  <!-- Bus stop zone -->
+  <rect x="20" y="80" width="120" height="30" fill="#ddd"/>
+  <text x="80" y="100" text-anchor="middle" font-family="Arial" font-size="9" fill="#555">BUS STOP</text>
+  <!-- Bus body -->
+  <rect x="15" y="112" width="140" height="48" rx="5" fill="#e74c3c"/>
+  <rect x="20" y="105" width="130" height="20" rx="4" fill="#c0392b"/>
+  <!-- Bus windows -->
+  <rect x="22" y="118" width="20" height="16" rx="2" fill="#a8d8f0"/>
+  <rect x="46" y="118" width="20" height="16" rx="2" fill="#a8d8f0"/>
+  <rect x="70" y="118" width="20" height="16" rx="2" fill="#a8d8f0"/>
+  <rect x="94" y="118" width="20" height="16" rx="2" fill="#a8d8f0"/>
+  <!-- Bus right indicator (pulling out) -->
+  <rect x="150" y="114" width="10" height="7" rx="1" fill="#f39c12"/>
+  <rect x="150" y="125" width="10" height="7" rx="1" fill="#f39c12"/>
+  <!-- Bus wheels -->
+  <circle cx="45" cy="162" r="10" fill="#222"/>
+  <circle cx="45" cy="162" r="4" fill="#888"/>
+  <circle cx="125" cy="162" r="10" fill="#222"/>
+  <circle cx="125" cy="162" r="4" fill="#888"/>
+  <!-- Bus destination board -->
+  <rect x="22" y="107" width="80" height="10" rx="2" fill="#1a1a1a"/>
+  <text x="62" y="116" text-anchor="middle" font-family="Arial" font-size="7" fill="#f39c12">CITY CENTRE</text>
+  <!-- Pull-out arrow -->
+  <path d="M160,140 Q185,130 185,125" fill="none" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+  <polygon points="179,121 187,118 188,128" fill="#f39c12"/>
+  <!-- Approaching car -->
+  <rect x="210" y="120" width="60" height="28" rx="6" fill="#3a7bd5"/>
+  <rect x="218" y="110" width="42" height="17" rx="4" fill="#3a7bd5"/>
+  <rect x="220" y="112" width="16" height="12" rx="2" fill="#a8d8f0"/>
+  <rect x="240" y="112" width="16" height="12" rx="2" fill="#a8d8f0"/>
+  <circle cx="224" cy="150" r="9" fill="#222"/>
+  <circle cx="258" cy="150" r="9" fill="#222"/>
+  <!-- YIELD label on car -->
+  <text x="240" y="137" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">YIELD</text>
+  <text x="150" y="192" text-anchor="middle" font-family="Arial" font-size="11" fill="#2c3e50" font-weight="bold">BUS PULLING OUT</text>
+</svg>

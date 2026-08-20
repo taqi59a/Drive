@@ -1,0 +1,36 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Road -->
+  <rect x="0" y="0" width="300" height="200" fill="#bbb"/>
+  <rect x="40" y="0" width="220" height="200" fill="#555"/>
+  <line x1="150" y1="0" x2="150" y2="200" stroke="white" stroke-width="2" stroke-dasharray="14,10"/>
+  <!-- Curved path of car toward obstacle -->
+  <path d="M100 170 Q95 120 130 80" stroke="#FFD700" stroke-width="3" stroke-dasharray="8,5" fill="none" stroke-linecap="round"/>
+  <!-- Car top-down -->
+  <g transform="translate(75,128)">
+    <rect x="0" y="-22" width="36" height="48" rx="7" fill="#2196F3" stroke="#1565C0" stroke-width="2"/>
+    <rect x="4" y="-14" width="28" height="13" rx="3" fill="#B3E5FC"/>
+    <rect x="4" y="10" width="28" height="12" rx="3" fill="#B3E5FC"/>
+    <rect x="-5" y="-12" width="7" height="10" rx="2" fill="#222"/>
+    <rect x="34" y="-12" width="7" height="10" rx="2" fill="#222"/>
+    <rect x="-5" y="11" width="7" height="10" rx="2" fill="#222"/>
+    <rect x="34" y="11" width="7" height="10" rx="2" fill="#222"/>
+  </g>
+  <!-- Obstacle (rock/cone) -->
+  <polygon points="130,55 118,82 142,82" fill="#E53935" stroke="#B71C1C" stroke-width="2"/>
+  <line x1="130" y1="63" x2="130" y2="75" stroke="white" stroke-width="2"/>
+  <circle cx="130" cy="78" r="2" fill="white"/>
+  <!-- Gaze icon (eye) pointing at obstacle -->
+  <g transform="translate(175,110)">
+    <ellipse cx="0" cy="0" rx="22" ry="13" fill="white" stroke="#333" stroke-width="2"/>
+    <circle cx="0" cy="0" r="7" fill="#1565C0"/>
+    <circle cx="0" cy="0" r="3" fill="#333"/>
+    <circle cx="2" cy="-2" r="1.5" fill="white"/>
+  </g>
+  <!-- Gaze line from eye to obstacle -->
+  <line x1="155" y1="107" x2="138" y2="80" stroke="#E53935" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#ga)"/>
+  <defs>
+    <marker id="ga" markerWidth="7" markerHeight="7" refX="3" refY="3.5" orient="auto">
+      <path d="M0,0 L0,7 L7,3.5 Z" fill="#E53935"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f0f4f8"/>
+  <!-- Road surface -->
+  <rect x="0" y="120" width="300" height="60" fill="#888"/>
+  <line x1="0" y1="178" x2="300" y2="178" stroke="white" stroke-width="2"/>
+  <!-- Perspective cones — getting larger left to right -->
+  <!-- Cone 1 (far, small) -->
+  <polygon points="38,122 34,140 42,140" fill="#e67e22"/>
+  <rect x="33" y="132" width="10" height="2.5" fill="white"/>
+  <rect x="32" y="137" width="12" height="3" fill="#e67e22"/>
+  <ellipse cx="38" cy="140" rx="7" ry="2" fill="#c0392b" opacity="0.4"/>
+  <!-- Cone 2 -->
+  <polygon points="82,118 76,142 88,142" fill="#e67e22"/>
+  <rect x="74" y="129" width="14" height="3" fill="white"/>
+  <rect x="73" y="135" width="16" height="4" fill="#e67e22"/>
+  <ellipse cx="82" cy="143" rx="9" ry="2.5" fill="#c0392b" opacity="0.4"/>
+  <!-- Cone 3 -->
+  <polygon points="130,113 122,144 138,144" fill="#e67e22"/>
+  <rect x="120" y="126" width="18" height="3.5" fill="white"/>
+  <rect x="118" y="133" width="22" height="5" fill="#e67e22"/>
+  <ellipse cx="130" cy="145" rx="12" ry="3" fill="#c0392b" opacity="0.4"/>
+  <!-- Cone 4 -->
+  <polygon points="183,107 172,146 194,146" fill="#e67e22"/>
+  <rect x="170" y="122" width="24" height="4" fill="white"/>
+  <rect x="168" y="131" width="28" height="6" fill="#e67e22"/>
+  <ellipse cx="183" cy="147" rx="15" ry="3.5" fill="#c0392b" opacity="0.4"/>
+  <!-- Cone 5 (near, large) -->
+  <polygon points="245,98 230,150 260,150" fill="#e67e22"/>
+  <rect x="228" y="116" width="32" height="5" fill="white"/>
+  <rect x="225" y="128" width="38" height="8" fill="#e67e22"/>
+  <ellipse cx="245" cy="151" rx="19" ry="4.5" fill="#c0392b" opacity="0.4"/>
+  <!-- Perspective ground line -->
+  <line x1="10" y1="155" x2="290" y2="155" stroke="#aaa" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="150" y="195" text-anchor="middle" font-family="Arial" font-size="11" fill="#2c3e50" font-weight="bold">TRAFFIC CONES IN PERSPECTIVE</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#e8e8e8"/>
+  <!-- Road -->
+  <rect x="0" y="130" width="300" height="50" fill="#777"/>
+  <line x1="0" y1="155" x2="300" y2="155" stroke="white" stroke-width="2" stroke-dasharray="20,10"/>
+  <!-- Truck cab -->
+  <rect x="30" y="75" width="75" height="70" rx="5" fill="#cc6600"/>
+  <!-- Cab windscreen -->
+  <rect x="38" y="82" width="55" height="35" rx="4" fill="#aaddff" opacity="0.85"/>
+  <!-- Cab details -->
+  <rect x="38" y="120" width="20" height="8" rx="2" fill="#aa4400"/>
+  <rect x="62" y="120" width="20" height="8" rx="2" fill="#aa4400"/>
+  <!-- Headlights -->
+  <rect x="30" y="108" width="10" height="8" rx="2" fill="#ffffaa"/>
+  <rect x="30" y="120" width="10" height="6" rx="2" fill="#ff4444"/>
+  <!-- Truck trailer -->
+  <rect x="105" y="90" width="155" height="55" rx="4" fill="#dddddd" stroke="#aaaaaa" stroke-width="2"/>
+  <!-- Trailer detail lines -->
+  <line x1="145" y1="90" x2="145" y2="145" stroke="#bbbbbb" stroke-width="1"/>
+  <line x1="185" y1="90" x2="185" y2="145" stroke="#bbbbbb" stroke-width="1"/>
+  <line x1="225" y1="90" x2="225" y2="145" stroke="#bbbbbb" stroke-width="1"/>
+  <!-- Wheels -->
+  <circle cx="55" cy="148" r="16" fill="#222"/>
+  <circle cx="55" cy="148" r="8" fill="#555"/>
+  <circle cx="130" cy="148" r="16" fill="#222"/>
+  <circle cx="130" cy="148" r="8" fill="#555"/>
+  <circle cx="165" cy="148" r="16" fill="#222"/>
+  <circle cx="165" cy="148" r="8" fill="#555"/>
+  <circle cx="230" cy="148" r="16" fill="#222"/>
+  <circle cx="230" cy="148" r="8" fill="#555"/>
+  <circle cx="255" cy="148" r="16" fill="#222"/>
+  <circle cx="255" cy="148" r="8" fill="#555"/>
+  <!-- OBU device on windscreen -->
+  <rect x="52" y="84" width="28" height="18" rx="3" fill="#1a1a2a" stroke="#3355aa" stroke-width="2"/>
+  <rect x="55" y="87" width="22" height="10" rx="2" fill="#2244aa" opacity="0.8"/>
+  <!-- OBU indicator light -->
+  <circle cx="73" cy="98" r="3" fill="#00ff44"/>
+  <!-- OBU label -->
+  <text x="66" y="95" text-anchor="middle" font-family="Arial" font-size="5" fill="white" font-weight="bold">OBU</text>
+  <!-- Viapass logo area on trailer -->
+  <rect x="150" y="100" width="80" height="28" rx="4" fill="#003399"/>
+  <text x="190" y="119" text-anchor="middle" font-family="Arial" font-size="13" fill="white" font-weight="bold">Viapass</text>
+  <text x="150" y="192" text-anchor="middle" font-family="Arial" font-size="12" fill="#333">Péage Viapass (camion)</text>
+</svg>

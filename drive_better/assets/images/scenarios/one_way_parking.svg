@@ -1,0 +1,31 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f0f4f8"/>
+  <!-- Road -->
+  <rect x="60" y="30" width="180" height="140" fill="#666"/>
+  <!-- Left kerb -->
+  <rect x="55" y="30" width="10" height="140" fill="#999"/>
+  <!-- Right kerb -->
+  <rect x="235" y="30" width="10" height="140" fill="#999"/>
+  <!-- Center line (one-way, solid) -->
+  <line x1="150" y1="30" x2="150" y2="170" stroke="white" stroke-width="2" stroke-dasharray="15,10"/>
+  <!-- Direction arrow on road -->
+  <line x1="150" y1="130" x2="150" y2="80" stroke="white" stroke-width="3"/>
+  <polygon points="143,82 150,65 157,82" fill="white"/>
+  <!-- ONE WAY sign -->
+  <rect x="110" y="36" width="80" height="22" rx="3" fill="#2c3e50"/>
+  <text x="150" y="51" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="white">ONE WAY →</text>
+  <!-- Parked car on LEFT side -->
+  <rect x="62" y="115" width="55" height="30" rx="5" fill="#3a7bd5"/>
+  <rect x="70" y="108" width="36" height="20" rx="4" fill="#3a7bd5"/>
+  <rect x="73" y="111" width="14" height="13" rx="2" fill="#a8d8f0"/>
+  <rect x="90" y="111" width="14" height="13" rx="2" fill="#a8d8f0"/>
+  <circle cx="75" cy="147" r="7" fill="#222"/>
+  <circle cx="75" cy="147" r="3" fill="#888"/>
+  <circle cx="108" cy="147" r="7" fill="#222"/>
+  <circle cx="108" cy="147" r="3" fill="#888"/>
+  <!-- P sign on left -->
+  <circle cx="30" cy="100" r="18" fill="#1a5276"/>
+  <text x="30" y="107" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="white">P</text>
+  <!-- Label -->
+  <text x="150" y="192" text-anchor="middle" font-family="Arial" font-size="11" fill="#2c3e50" font-weight="bold">ONE-WAY PARKING (LEFT)</text>
+</svg>

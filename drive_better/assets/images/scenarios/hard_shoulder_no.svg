@@ -1,0 +1,37 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main road -->
+  <rect x="0" y="0" width="300" height="200" fill="#bbb"/>
+  <rect x="0" y="0" width="210" height="200" fill="#555"/>
+  <!-- Lane divider -->
+  <line x1="105" y1="0" x2="105" y2="200" stroke="white" stroke-width="2" stroke-dasharray="16,10"/>
+  <!-- Hard shoulder hatching -->
+  <rect x="210" y="0" width="90" height="200" fill="#e0d8c0"/>
+  <line x1="210" y1="0" x2="210" y2="200" stroke="#999" stroke-width="3"/>
+  <!-- Diagonal hatch lines -->
+  <line x1="210" y1="0" x2="300" y2="90" stroke="#bbb" stroke-width="3"/>
+  <line x1="210" y1="30" x2="300" y2="120" stroke="#bbb" stroke-width="3"/>
+  <line x1="210" y1="60" x2="300" y2="150" stroke="#bbb" stroke-width="3"/>
+  <line x1="210" y1="90" x2="300" y2="180" stroke="#bbb" stroke-width="3"/>
+  <line x1="210" y1="120" x2="280" y2="200" stroke="#bbb" stroke-width="3"/>
+  <line x1="210" y1="150" x2="250" y2="200" stroke="#bbb" stroke-width="3"/>
+  <line x1="210" y1="180" x2="220" y2="200" stroke="#bbb" stroke-width="3"/>
+  <line x1="230" y1="0" x2="300" y2="70" stroke="#bbb" stroke-width="3"/>
+  <line x1="250" y1="0" x2="300" y2="50" stroke="#bbb" stroke-width="3"/>
+  <line x1="270" y1="0" x2="300" y2="30" stroke="#bbb" stroke-width="3"/>
+  <!-- Car parked on hard shoulder -->
+  <g transform="translate(235,90)">
+    <rect x="-24" y="-30" width="48" height="60" rx="8" fill="#78909C" stroke="#546E7A" stroke-width="2"/>
+    <rect x="-16" y="-20" width="32" height="18" rx="3" fill="#B3E5FC"/>
+    <rect x="-16" y="12" width="32" height="16" rx="3" fill="#B3E5FC"/>
+    <rect x="-30" y="-18" width="8" height="13" rx="2" fill="#222"/>
+    <rect x="22" y="-18" width="8" height="13" rx="2" fill="#222"/>
+    <rect x="-30" y="14" width="8" height="13" rx="2" fill="#222"/>
+    <rect x="22" y="14" width="8" height="13" rx="2" fill="#222"/>
+  </g>
+  <!-- Phone icon on car -->
+  <rect x="227" y="78" width="16" height="24" rx="3" fill="#333"/>
+  <rect x="229" y="81" width="12" height="16" rx="2" fill="#64B5F6"/>
+  <!-- Red X over phone -->
+  <line x1="224" y1="76" x2="246" y2="104" stroke="#E53935" stroke-width="4" stroke-linecap="round"/>
+  <line x1="246" y1="76" x2="224" y2="104" stroke="#E53935" stroke-width="4" stroke-linecap="round"/>
+</svg>
